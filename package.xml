@@ -16,7 +16,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-05-03</date>
+ <date>2017-10-17</date>
  <version>
   <release>2.6.4</release>
   <api>2.6.0</api>
@@ -63,6 +63,7 @@
        <file name=".scrutinizer.yml" role="php" />
        <file name=".travis.install.sh" role="php" />
        <file name=".travis.yml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpmd.xml.dist" role="php" />
@@ -111,11 +112,13 @@
        </dir> <!-- /bundle/vendor/phpdocumentor/reflection-docblock/src -->
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
+       <file name="composer.json" role="php" />
+       <file name="composer.lock" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpdocumentor/reflection-docblock -->
-      </dir> <!-- /bundle/vendor/phpdocumentor -->
+     </dir> <!-- /bundle/vendor/phpdocumentor -->
      <dir name="phpspec">
       <dir name="prophecy">
        <dir name="fixtures">
@@ -370,6 +373,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="CHANGES.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
@@ -536,6 +540,7 @@
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
        <file name="ChangeLog-2.2.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
@@ -550,6 +555,7 @@
        <file name=".gitattributes" role="php" />
        <file name=".gitignore" role="php" />
        <file name="ChangeLog.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpunit/php-file-iterator -->
@@ -559,6 +565,7 @@
        </dir> <!-- /bundle/vendor/phpunit/php-text-template/src -->
        <file name=".gitattributes" role="php" />
        <file name=".gitignore" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpunit/php-text-template -->
@@ -569,6 +576,7 @@
        <file name=".gitattributes" role="php" />
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpunit/php-timer -->
@@ -589,6 +597,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpunit/php-token-stream -->
@@ -774,6 +783,7 @@
        <file name="ChangeLog-4.7.md" role="php" />
        <file name="ChangeLog-4.8.md" role="php" />
        <file name="CODE_OF_CONDUCT.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit" role="php" />
@@ -859,6 +869,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
@@ -905,6 +916,7 @@
        <file name=".gitignore" role="php" />
        <file name="build.xml" role="php" />
        <file name="ChangeLog.markdown" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="package.xml" role="php" />
        <file name="phpunit.xml.dist" role="php" />
@@ -961,6 +973,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -982,6 +995,7 @@
        <file name=".php_cs" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -998,6 +1012,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/sebastian/environment -->
@@ -1011,6 +1026,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -1027,6 +1043,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -1043,6 +1060,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -1053,6 +1071,7 @@
        </dir> <!-- /bundle/vendor/sebastian/version/src -->
        <file name=".gitattributes" role="php" />
        <file name=".gitignore" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/sebastian/version -->
@@ -1104,6 +1123,7 @@
        </dir> <!-- /bundle/vendor/symfony/yaml/Tests -->
        <file name=".gitignore" role="php" />
        <file name="CHANGELOG.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="Dumper.php" role="php" />
        <file name="Escaper.php" role="php" />
        <file name="Inline.php" role="php" />
@@ -1128,7 +1148,6 @@
         <file name="phpunit.xml" role="doc" />
        </dir> <!-- /doc/Horde/Test/template/packagetest -->
       </dir> <!-- /doc/Horde/Test/template -->
-      <file name="COPYING" role="doc" />
      </dir> <!-- /doc/Horde/Test -->
     </dir> <!-- /doc/Horde -->
    </dir> <!-- /doc -->
@@ -1173,6 +1192,7 @@
      </dir> <!-- /lib/Horde/Test -->
     </dir> <!-- /lib/Horde -->
    </dir> <!-- /lib -->
+   <file name="LICENSE" role="doc" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -1239,18 +1259,21 @@
    <install as="Horde/Test/vendor/doctrine/instantiator/.scrutinizer.yml" name="bundle/vendor/doctrine/instantiator/.scrutinizer.yml" />
    <install as="Horde/Test/vendor/doctrine/instantiator/.travis.install.sh" name="bundle/vendor/doctrine/instantiator/.travis.install.sh" />
    <install as="Horde/Test/vendor/doctrine/instantiator/.travis.yml" name="bundle/vendor/doctrine/instantiator/.travis.yml" />
+   <install as="Horde/Test/vendor/doctrine/instantiator/composer.json" name="bundle/vendor/doctrine/instantiator/composer.json" />
    <install as="Horde/Test/vendor/doctrine/instantiator/CONTRIBUTING.md" name="bundle/vendor/doctrine/instantiator/CONTRIBUTING.md" />
    <install as="Horde/Test/vendor/doctrine/instantiator/LICENSE" name="bundle/vendor/doctrine/instantiator/LICENSE" />
    <install as="Horde/Test/vendor/doctrine/instantiator/phpmd.xml.dist" name="bundle/vendor/doctrine/instantiator/phpmd.xml.dist" />
    <install as="Horde/Test/vendor/doctrine/instantiator/phpunit.xml.dist" name="bundle/vendor/doctrine/instantiator/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/doctrine/instantiator/README.md" name="bundle/vendor/doctrine/instantiator/README.md" />
-   <install as="Horde/Test/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php" name="bundle/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php" />
-   <install as="Horde/Test/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php" name="bundle/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php" />
    <install as="Horde/Test/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/ExceptionInterface.php" name="bundle/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/ExceptionInterface.php" />
    <install as="Horde/Test/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php" name="bundle/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php" />
    <install as="Horde/Test/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php" name="bundle/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php" />
+   <install as="Horde/Test/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php" name="bundle/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php" />
+   <install as="Horde/Test/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php" name="bundle/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/.gitignore" name="bundle/vendor/phpdocumentor/reflection-docblock/.gitignore" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/.travis.yml" name="bundle/vendor/phpdocumentor/reflection-docblock/.travis.yml" />
+   <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/composer.json" name="bundle/vendor/phpdocumentor/reflection-docblock/composer.json" />
+   <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/composer.lock" name="bundle/vendor/phpdocumentor/reflection-docblock/composer.lock" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/LICENSE" name="bundle/vendor/phpdocumentor/reflection-docblock/LICENSE" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/phpunit.xml.dist" name="bundle/vendor/phpdocumentor/reflection-docblock/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/README.md" name="bundle/vendor/phpdocumentor/reflection-docblock/README.md" />
@@ -1282,9 +1305,8 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/.gitignore" name="bundle/vendor/phpspec/prophecy/.gitignore" />
    <install as="Horde/Test/vendor/phpspec/prophecy/.travis.yml" name="bundle/vendor/phpspec/prophecy/.travis.yml" />
    <install as="Horde/Test/vendor/phpspec/prophecy/CHANGES.md" name="bundle/vendor/phpspec/prophecy/CHANGES.md" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/composer.json" name="bundle/vendor/phpspec/prophecy/composer.json" />
    <install as="Horde/Test/vendor/phpspec/prophecy/CONTRIBUTING.md" name="bundle/vendor/phpspec/prophecy/CONTRIBUTING.md" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/LICENSE" name="bundle/vendor/phpspec/prophecy/LICENSE" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/README.md" name="bundle/vendor/phpspec/prophecy/README.md" />
    <install as="Horde/Test/vendor/phpspec/prophecy/fixtures/EmptyClass.php" name="bundle/vendor/phpspec/prophecy/fixtures/EmptyClass.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/fixtures/EmptyInterface.php" name="bundle/vendor/phpspec/prophecy/fixtures/EmptyInterface.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/fixtures/FinalClass.php" name="bundle/vendor/phpspec/prophecy/fixtures/FinalClass.php" />
@@ -1303,8 +1325,8 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/fixtures/WithTypehintedVariadicArgument.php" name="bundle/vendor/phpspec/prophecy/fixtures/WithTypehintedVariadicArgument.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/fixtures/WithVariadicArgument.php" name="bundle/vendor/phpspec/prophecy/fixtures/WithVariadicArgument.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/fixtures/WithVirtuallyPrivateMethod.php" name="bundle/vendor/phpspec/prophecy/fixtures/WithVirtuallyPrivateMethod.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/ArgumentSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/ArgumentSpec.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/ProphetSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/ProphetSpec.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/LICENSE" name="bundle/vendor/phpspec/prophecy/LICENSE" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/README.md" name="bundle/vendor/phpspec/prophecy/README.md" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Argument/ArgumentsWildcardSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Argument/ArgumentsWildcardSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/AnyValuesTokenSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/AnyValuesTokenSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/AnyValueTokenSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/AnyValueTokenSpec.php" />
@@ -1320,14 +1342,12 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/ObjectStateTokenSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/ObjectStateTokenSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/StringContainsTokenSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/StringContainsTokenSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/TypeTokenSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Argument/Token/TypeTokenSpec.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/ArgumentSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/ArgumentSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Call/CallCenterSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Call/CallCenterSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Call/CallSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Call/CallSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Comparator/ClosureComparatorSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Comparator/ClosureComparatorSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Comparator/FactorySpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Comparator/FactorySpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Comparator/ProphecyComparatorSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Comparator/ProphecyComparatorSpec.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/DoublerSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/DoublerSpec.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/LazyDoubleSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/LazyDoubleSpec.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/NameGeneratorSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/NameGeneratorSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/DisableConstructorPatchSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/DisableConstructorPatchSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/HhvmExceptionPatchSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/HhvmExceptionPatchSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/KeywordPatchSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/KeywordPatchSpec.php" />
@@ -1336,11 +1356,14 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/ReflectionClassNewInstancePatchSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/ReflectionClassNewInstancePatchSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/SplFileInfoPatchSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/SplFileInfoPatchSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/TraversablePatchSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/ClassPatch/TraversablePatchSpec.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/DoublerSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/DoublerSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/ClassCodeGeneratorSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/ClassCodeGeneratorSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/ClassCreatorSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/ClassCreatorSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/Node/ArgumentNodeSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/Node/ArgumentNodeSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/Node/ClassNodeSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/Node/ClassNodeSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/Node/MethodNodeSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/Generator/Node/MethodNodeSpec.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/LazyDoubleSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/LazyDoubleSpec.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Doubler/NameGeneratorSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Doubler/NameGeneratorSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Exception/Call/UnexpectedCallExceptionSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Exception/Call/UnexpectedCallExceptionSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/ClassCreatorExceptionSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/ClassCreatorExceptionSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/ClassMirrorExceptionSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/ClassMirrorExceptionSpec.php" />
@@ -1366,9 +1389,9 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Prophecy/MethodProphecySpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Prophecy/MethodProphecySpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Prophecy/ObjectProphecySpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Prophecy/ObjectProphecySpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Prophecy/RevealerSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Prophecy/RevealerSpec.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/ProphetSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/ProphetSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/spec/Prophecy/Util/StringUtilSpec.php" name="bundle/vendor/phpspec/prophecy/spec/Prophecy/Util/StringUtilSpec.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Argument.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Argument.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Prophet.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Prophet.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValuesToken.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValuesToken.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php" />
@@ -1391,10 +1414,6 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Comparator/Factory.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Comparator/Factory.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Comparator/ProphecyComparator.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Comparator/ProphecyComparator.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/CachedDoubler.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/CachedDoubler.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/DoubleInterface.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/DoubleInterface.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Doubler.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Doubler.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/LazyDouble.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/LazyDouble.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/NameGenerator.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/NameGenerator.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ClassPatchInterface.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ClassPatchInterface.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/DisableConstructorPatch.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/DisableConstructorPatch.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/HhvmExceptionPatch.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/HhvmExceptionPatch.php" />
@@ -1404,15 +1423,17 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ReflectionClassNewInstancePatch.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ReflectionClassNewInstancePatch.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/SplFileInfoPatch.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/SplFileInfoPatch.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/TraversablePatch.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/TraversablePatch.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/DoubleInterface.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/DoubleInterface.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Doubler.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Doubler.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCodeGenerator.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCodeGenerator.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCreator.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCreator.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassMirror.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassMirror.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ReflectionInterface.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ReflectionInterface.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ArgumentNode.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ArgumentNode.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ClassNode.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ClassNode.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/MethodNode.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/MethodNode.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php" />
-   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/InvalidArgumentException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/InvalidArgumentException.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ReflectionInterface.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ReflectionInterface.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/LazyDouble.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/LazyDouble.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Doubler/NameGenerator.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Doubler/NameGenerator.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Call/UnexpectedCallException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Call/UnexpectedCallException.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassCreatorException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassCreatorException.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassMirrorException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassMirrorException.php" />
@@ -1423,6 +1444,8 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotExtendableException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotExtendableException.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotFoundException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotFoundException.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ReturnByReferenceException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ReturnByReferenceException.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/InvalidArgumentException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/InvalidArgumentException.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/AggregateException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/AggregateException.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/FailedPredictionException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/FailedPredictionException.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/NoCallsException.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/NoCallsException.php" />
@@ -1452,51 +1475,47 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecySubjectInterface.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecySubjectInterface.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Prophecy/Revealer.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Prophecy/Revealer.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Prophecy/RevealerInterface.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Prophecy/RevealerInterface.php" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Prophet.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Prophet.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php" />
    <install as="Horde/Test/vendor/phpspec/prophecy/src/Prophecy/Util/StringUtil.php" name="bundle/vendor/phpspec/prophecy/src/Prophecy/Util/StringUtil.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/.gitattributes" name="bundle/vendor/phpunit/php-code-coverage/.gitattributes" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/.gitignore" name="bundle/vendor/phpunit/php-code-coverage/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/.travis.yml" name="bundle/vendor/phpunit/php-code-coverage/.travis.yml" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/build.xml" name="bundle/vendor/phpunit/php-code-coverage/build.xml" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/build/travis-ci.xml" name="bundle/vendor/phpunit/php-code-coverage/build/travis-ci.xml" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/ChangeLog-2.2.md" name="bundle/vendor/phpunit/php-code-coverage/ChangeLog-2.2.md" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/composer.json" name="bundle/vendor/phpunit/php-code-coverage/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/CONTRIBUTING.md" name="bundle/vendor/phpunit/php-code-coverage/CONTRIBUTING.md" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/LICENSE" name="bundle/vendor/phpunit/php-code-coverage/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/phpunit.xml.dist" name="bundle/vendor/phpunit/php-code-coverage/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/README.md" name="bundle/vendor/phpunit/php-code-coverage/README.md" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/build/travis-ci.xml" name="bundle/vendor/phpunit/php-code-coverage/build/travis-ci.xml" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/scripts/auto_append.php" name="bundle/vendor/phpunit/php-code-coverage/scripts/auto_append.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/scripts/auto_prepend.php" name="bundle/vendor/phpunit/php-code-coverage/scripts/auto_prepend.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/HHVM.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/HHVM.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/PHPDBG.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/PHPDBG.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/Xdebug.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/Xdebug.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception/UnintentionallyCoveredCode.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception/UnintentionallyCoveredCode.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Clover.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Clover.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Crap4j.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Crap4j.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Factory.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Factory.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/PHP.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/PHP.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Text.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Text.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Dashboard.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Dashboard.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Directory.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Directory.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/coverage_bar.html.dist" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/coverage_bar.html.dist" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/bootstrap.min.css" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/bootstrap.min.css" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/nv.d3.min.css" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/nv.d3.min.css" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/style.css" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/style.css" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/dashboard.html.dist" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/dashboard.html.dist" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/directory.html.dist" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/directory.html.dist" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/directory_item.html.dist" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/directory_item.html.dist" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/file.html.dist" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/file.html.dist" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/file_item.html.dist" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/file_item.html.dist" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/method_item.html.dist" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/method_item.html.dist" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/bootstrap.min.css" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/bootstrap.min.css" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/nv.d3.min.css" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/nv.d3.min.css" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/style.css" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/style.css" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.eot" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.eot" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.svg" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.svg" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.ttf" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.ttf" />
@@ -1509,26 +1528,32 @@
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/jquery.min.js" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/jquery.min.js" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/nv.d3.min.js" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/nv.d3.min.js" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/respond.min.js" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/respond.min.js" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/method_item.html.dist" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/method_item.html.dist" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Directory.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Directory.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/File.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/File.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Iterator.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Iterator.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/PHP.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/PHP.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Text.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Text.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Directory.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Directory.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Node.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Node.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Project.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Project.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Tests.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Tests.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Coverage.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Coverage.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Method.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Method.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Report.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Report.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Unit.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Unit.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Node.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Node.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Project.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Project.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Tests.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Tests.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util/InvalidArgumentHelper.php" name="bundle/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util/InvalidArgumentHelper.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/TestCase.php" name="bundle/vendor/phpunit/php-code-coverage/tests/TestCase.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverageTest.php" name="bundle/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverageTest.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/FilterTest.php" name="bundle/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/FilterTest.php" />
-   <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/UtilTest.php" name="bundle/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/UtilTest.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/Report/CloverTest.php" name="bundle/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/Report/CloverTest.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/Report/FactoryTest.php" name="bundle/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/Report/FactoryTest.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/UtilTest.php" name="bundle/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/UtilTest.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverageTest.php" name="bundle/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverageTest.php" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/TestCase.php" name="bundle/vendor/phpunit/php-code-coverage/tests/TestCase.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/_files/BankAccount-clover.xml" name="bundle/vendor/phpunit/php-code-coverage/tests/_files/BankAccount-clover.xml" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/_files/BankAccount.php" name="bundle/vendor/phpunit/php-code-coverage/tests/_files/BankAccount.php" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/tests/_files/BankAccountTest.php" name="bundle/vendor/phpunit/php-code-coverage/tests/_files/BankAccountTest.php" />
@@ -1576,6 +1601,7 @@
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/.gitattributes" name="bundle/vendor/phpunit/php-file-iterator/.gitattributes" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/.gitignore" name="bundle/vendor/phpunit/php-file-iterator/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/ChangeLog.md" name="bundle/vendor/phpunit/php-file-iterator/ChangeLog.md" />
+   <install as="Horde/Test/vendor/phpunit/php-file-iterator/composer.json" name="bundle/vendor/phpunit/php-file-iterator/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/LICENSE" name="bundle/vendor/phpunit/php-file-iterator/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/README.md" name="bundle/vendor/phpunit/php-file-iterator/README.md" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/src/Facade.php" name="bundle/vendor/phpunit/php-file-iterator/src/Facade.php" />
@@ -1583,12 +1609,14 @@
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/src/Iterator.php" name="bundle/vendor/phpunit/php-file-iterator/src/Iterator.php" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/.gitattributes" name="bundle/vendor/phpunit/php-text-template/.gitattributes" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/.gitignore" name="bundle/vendor/phpunit/php-text-template/.gitignore" />
+   <install as="Horde/Test/vendor/phpunit/php-text-template/composer.json" name="bundle/vendor/phpunit/php-text-template/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/LICENSE" name="bundle/vendor/phpunit/php-text-template/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/README.md" name="bundle/vendor/phpunit/php-text-template/README.md" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/src/Template.php" name="bundle/vendor/phpunit/php-text-template/src/Template.php" />
    <install as="Horde/Test/vendor/phpunit/php-timer/.gitattributes" name="bundle/vendor/phpunit/php-timer/.gitattributes" />
    <install as="Horde/Test/vendor/phpunit/php-timer/.gitignore" name="bundle/vendor/phpunit/php-timer/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/php-timer/.travis.yml" name="bundle/vendor/phpunit/php-timer/.travis.yml" />
+   <install as="Horde/Test/vendor/phpunit/php-timer/composer.json" name="bundle/vendor/phpunit/php-timer/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-timer/LICENSE" name="bundle/vendor/phpunit/php-timer/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-timer/README.md" name="bundle/vendor/phpunit/php-timer/README.md" />
    <install as="Horde/Test/vendor/phpunit/php-timer/src/Timer.php" name="bundle/vendor/phpunit/php-timer/src/Timer.php" />
@@ -1596,12 +1624,103 @@
    <install as="Horde/Test/vendor/phpunit/php-token-stream/.gitignore" name="bundle/vendor/phpunit/php-token-stream/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/.travis.yml" name="bundle/vendor/phpunit/php-token-stream/.travis.yml" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/build.xml" name="bundle/vendor/phpunit/php-token-stream/build.xml" />
+   <install as="Horde/Test/vendor/phpunit/php-token-stream/build/phpunit.xml" name="bundle/vendor/phpunit/php-token-stream/build/phpunit.xml" />
+   <install as="Horde/Test/vendor/phpunit/php-token-stream/composer.json" name="bundle/vendor/phpunit/php-token-stream/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/LICENSE" name="bundle/vendor/phpunit/php-token-stream/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/README.md" name="bundle/vendor/phpunit/php-token-stream/README.md" />
-   <install as="Horde/Test/vendor/phpunit/php-token-stream/build/phpunit.xml" name="bundle/vendor/phpunit/php-token-stream/build/phpunit.xml" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/src/Token.php" name="bundle/vendor/phpunit/php-token-stream/src/Token.php" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/src/Token/Stream.php" name="bundle/vendor/phpunit/php-token-stream/src/Token/Stream.php" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/src/Token/Stream/CachingFactory.php" name="bundle/vendor/phpunit/php-token-stream/src/Token/Stream/CachingFactory.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/.gitattributes" name="bundle/vendor/phpunit/phpunit-mock-objects/.gitattributes" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/.gitignore" name="bundle/vendor/phpunit/phpunit-mock-objects/.gitignore" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/.travis.yml" name="bundle/vendor/phpunit/phpunit-mock-objects/.travis.yml" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/build.xml" name="bundle/vendor/phpunit/phpunit-mock-objects/build.xml" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/build/travis-ci.xml" name="bundle/vendor/phpunit/phpunit-mock-objects/build/travis-ci.xml" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/composer.json" name="bundle/vendor/phpunit/phpunit-mock-objects/composer.json" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/CONTRIBUTING.md" name="bundle/vendor/phpunit/phpunit-mock-objects/CONTRIBUTING.md" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/LICENSE" name="bundle/vendor/phpunit/phpunit-mock-objects/LICENSE" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/phpunit.xml.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/phpunit.xml.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/README.md" name="bundle/vendor/phpunit/phpunit-mock-objects/README.md" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Identity.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Identity.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/InvocationMocker.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/InvocationMocker.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Match.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Match.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/MethodNameMatch.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/MethodNameMatch.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Namespace.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Namespace.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/ParametersMatch.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/ParametersMatch.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Stub.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Stub.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/BadMethodCallException.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/BadMethodCallException.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/Exception.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/Exception.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/RuntimeException.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/RuntimeException.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_class.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_class.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_class_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_class_method.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_clone.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_clone.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_method.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_static_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_static_method.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/proxied_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/proxied_method.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/trait_class.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/trait_class.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/unmocked_clone.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/unmocked_clone.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/wsdl_class.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/wsdl_class.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/wsdl_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/wsdl_method.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Object.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Object.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Static.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Static.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/InvocationMocker.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/InvocationMocker.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invokable.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invokable.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyInvokedCount.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyInvokedCount.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyParameters.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyParameters.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/ConsecutiveParameters.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/ConsecutiveParameters.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Invocation.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Invocation.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtIndex.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtIndex.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastCount.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastCount.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastOnce.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastOnce.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtMostCount.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtMostCount.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedCount.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedCount.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedRecorder.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedRecorder.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/MethodName.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/MethodName.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Parameters.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Parameters.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/StatelessInvocation.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/StatelessInvocation.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockBuilder.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockBuilder.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockObject.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockObject.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ConsecutiveCalls.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ConsecutiveCalls.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Exception.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Exception.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/MatcherCollection.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/MatcherCollection.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Return.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Return.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnArgument.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnArgument.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnCallback.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnCallback.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnSelf.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnSelf.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnValueMap.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnValueMap.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Verifiable.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Verifiable.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/.gitattributes" name="bundle/vendor/phpunit/phpunit-story/.gitattributes" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/.gitignore" name="bundle/vendor/phpunit/phpunit-story/.gitignore" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/build.xml" name="bundle/vendor/phpunit/phpunit-story/build.xml" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/ChangeLog.markdown" name="bundle/vendor/phpunit/phpunit-story/ChangeLog.markdown" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/composer.json" name="bundle/vendor/phpunit/phpunit-story/composer.json" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/LICENSE" name="bundle/vendor/phpunit/phpunit-story/LICENSE" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/package.xml" name="bundle/vendor/phpunit/phpunit-story/package.xml" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/phpunit.xml.dist" name="bundle/vendor/phpunit/phpunit-story/phpunit.xml.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Autoload.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Autoload.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Autoload.php.in" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Autoload.php.in" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Given.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Given.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/HTML.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/HTML.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenario.html.dist" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenario.html.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenarios.html.dist" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenarios.html.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenario_header.html.dist" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenario_header.html.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/step.html.dist" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/step.html.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Text.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Text.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Scenario.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Scenario.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Step.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Step.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/TestCase.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/TestCase.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Then.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Then.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/When.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/When.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/Functional/default.phpt" name="bundle/vendor/phpunit/phpunit-story/Tests/Functional/default.phpt" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/Functional/story.phpt" name="bundle/vendor/phpunit/phpunit-story/Tests/Functional/story.phpt" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/Functional/testdox.phpt" name="bundle/vendor/phpunit/phpunit-story/Tests/Functional/testdox.phpt" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/_files/BowlingGame.php" name="bundle/vendor/phpunit/phpunit-story/Tests/_files/BowlingGame.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/_files/BowlingGameSpec.php" name="bundle/vendor/phpunit/phpunit-story/Tests/_files/BowlingGameSpec.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/.gitattributes" name="bundle/vendor/phpunit/phpunit/.gitattributes" />
    <install as="Horde/Test/vendor/phpunit/phpunit/.gitignore" name="bundle/vendor/phpunit/phpunit/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/phpunit/.php_cs" name="bundle/vendor/phpunit/phpunit/.php_cs" />
@@ -1617,6 +1736,7 @@
    <install as="Horde/Test/vendor/phpunit/phpunit/ChangeLog-4.7.md" name="bundle/vendor/phpunit/phpunit/ChangeLog-4.7.md" />
    <install as="Horde/Test/vendor/phpunit/phpunit/ChangeLog-4.8.md" name="bundle/vendor/phpunit/phpunit/ChangeLog-4.8.md" />
    <install as="Horde/Test/vendor/phpunit/phpunit/CODE_OF_CONDUCT.md" name="bundle/vendor/phpunit/phpunit/CODE_OF_CONDUCT.md" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/composer.json" name="bundle/vendor/phpunit/phpunit/composer.json" />
    <install as="Horde/Test/vendor/phpunit/phpunit/CONTRIBUTING.md" name="bundle/vendor/phpunit/phpunit/CONTRIBUTING.md" />
    <install as="Horde/Test/vendor/phpunit/phpunit/LICENSE" name="bundle/vendor/phpunit/phpunit/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/phpunit/phpunit" name="bundle/vendor/phpunit/phpunit/phpunit" />
@@ -1635,37 +1755,11 @@
    <install as="Horde/Test/vendor/phpunit/phpunit/src/ForwardCompatibility/TestCase.php" name="bundle/vendor/phpunit/phpunit/src/ForwardCompatibility/TestCase.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/ForwardCompatibility/TestListener.php" name="bundle/vendor/phpunit/phpunit/src/ForwardCompatibility/TestListener.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Assert.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Assert.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/AssertionFailedError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/AssertionFailedError.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/BaseTestListener.php" name="bundle/vendor/phpunit/phpunit/src/Framework/BaseTestListener.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/CodeCoverageException.php" name="bundle/vendor/phpunit/phpunit/src/Framework/CodeCoverageException.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Error.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Error.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Exception.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Exception.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php" name="bundle/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/ExpectationFailedException.php" name="bundle/vendor/phpunit/phpunit/src/Framework/ExpectationFailedException.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/IncompleteTest.php" name="bundle/vendor/phpunit/phpunit/src/Framework/IncompleteTest.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/IncompleteTestCase.php" name="bundle/vendor/phpunit/phpunit/src/Framework/IncompleteTestCase.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/IncompleteTestError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/IncompleteTestError.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetError.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetException.php" name="bundle/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetException.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/OutputError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/OutputError.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/RiskyTest.php" name="bundle/vendor/phpunit/phpunit/src/Framework/RiskyTest.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/RiskyTestError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/RiskyTestError.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SelfDescribing.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SelfDescribing.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SkippedTest.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SkippedTest.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SkippedTestCase.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SkippedTestCase.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SkippedTestError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SkippedTestError.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SkippedTestSuiteError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SkippedTestSuiteError.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SyntheticError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SyntheticError.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Test.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Test.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestCase.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestCase.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestFailure.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestFailure.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestListener.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestListener.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestResult.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestResult.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestSuite.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestSuite.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Warning.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Warning.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/And.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/And.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/ArrayHasKey.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/ArrayHasKey.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php" />
@@ -1692,6 +1786,7 @@
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/IsTrue.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/IsTrue.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/IsType.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/IsType.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches/ErrorMessageProvider.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches/ErrorMessageProvider.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/LessThan.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/LessThan.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/Not.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/Not.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/ObjectHasAttribute.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/ObjectHasAttribute.php" />
@@ -1705,21 +1800,46 @@
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContains.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContains.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContainsOnly.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContainsOnly.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/Xor.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/Xor.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches/ErrorMessageProvider.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches/ErrorMessageProvider.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Error.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Error.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Error/Deprecated.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Error/Deprecated.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Error/Notice.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Error/Notice.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Error/Warning.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Error/Warning.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Exception.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Exception.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php" name="bundle/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/ExpectationFailedException.php" name="bundle/vendor/phpunit/phpunit/src/Framework/ExpectationFailedException.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/IncompleteTest.php" name="bundle/vendor/phpunit/phpunit/src/Framework/IncompleteTest.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/IncompleteTestCase.php" name="bundle/vendor/phpunit/phpunit/src/Framework/IncompleteTestCase.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/IncompleteTestError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/IncompleteTestError.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetError.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetException.php" name="bundle/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetException.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/OutputError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/OutputError.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/RiskyTest.php" name="bundle/vendor/phpunit/phpunit/src/Framework/RiskyTest.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/RiskyTestError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/RiskyTestError.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SelfDescribing.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SelfDescribing.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SkippedTest.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SkippedTest.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SkippedTestCase.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SkippedTestCase.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SkippedTestError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SkippedTestError.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SkippedTestSuiteError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SkippedTestSuiteError.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/SyntheticError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/SyntheticError.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Test.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Test.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestCase.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestCase.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestFailure.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestFailure.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestListener.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestListener.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestResult.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestResult.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestSuite.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestSuite.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/TestSuite/DataProvider.php" name="bundle/vendor/phpunit/phpunit/src/Framework/TestSuite/DataProvider.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php" name="bundle/vendor/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Framework/Warning.php" name="bundle/vendor/phpunit/phpunit/src/Framework/Warning.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php" name="bundle/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Exception.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Exception.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Factory.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Factory.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Group.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Group.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Group/Exclude.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Group/Exclude.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Group/Include.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Group/Include.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Test.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Test.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/StandardTestSuiteLoader.php" name="bundle/vendor/phpunit/phpunit/src/Runner/StandardTestSuiteLoader.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php" name="bundle/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Version.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Version.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Factory.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Factory.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Group.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Group.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Test.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Test.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Group/Exclude.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Group/Exclude.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Runner/Filter/Group/Include.php" name="bundle/vendor/phpunit/phpunit/src/Runner/Filter/Group/Include.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/TextUI/Command.php" name="bundle/vendor/phpunit/phpunit/src/TextUI/Command.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/TextUI/ResultPrinter.php" name="bundle/vendor/phpunit/phpunit/src/TextUI/ResultPrinter.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" name="bundle/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" />
@@ -1732,120 +1852,33 @@
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Getopt.php" name="bundle/vendor/phpunit/phpunit/src/Util/Getopt.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/GlobalState.php" name="bundle/vendor/phpunit/phpunit/src/Util/GlobalState.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/InvalidArgumentHelper.php" name="bundle/vendor/phpunit/phpunit/src/Util/InvalidArgumentHelper.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Log/JSON.php" name="bundle/vendor/phpunit/phpunit/src/Util/Log/JSON.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Log/JUnit.php" name="bundle/vendor/phpunit/phpunit/src/Util/Log/JUnit.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Log/TAP.php" name="bundle/vendor/phpunit/phpunit/src/Util/Log/TAP.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/PHP.php" name="bundle/vendor/phpunit/phpunit/src/Util/PHP.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/PHP/Default.php" name="bundle/vendor/phpunit/phpunit/src/Util/PHP/Default.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" name="bundle/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/PHP/Template/TestCaseMethod.tpl.dist" name="bundle/vendor/phpunit/phpunit/src/Util/PHP/Template/TestCaseMethod.tpl.dist" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/PHP/Windows.php" name="bundle/vendor/phpunit/phpunit/src/Util/PHP/Windows.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Printer.php" name="bundle/vendor/phpunit/phpunit/src/Util/Printer.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Regex.php" name="bundle/vendor/phpunit/phpunit/src/Util/Regex.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/String.php" name="bundle/vendor/phpunit/phpunit/src/Util/String.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Test.php" name="bundle/vendor/phpunit/phpunit/src/Util/Test.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/TestSuiteIterator.php" name="bundle/vendor/phpunit/phpunit/src/Util/TestSuiteIterator.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Type.php" name="bundle/vendor/phpunit/phpunit/src/Util/Type.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/XML.php" name="bundle/vendor/phpunit/phpunit/src/Util/XML.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Log/JSON.php" name="bundle/vendor/phpunit/phpunit/src/Util/Log/JSON.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Log/JUnit.php" name="bundle/vendor/phpunit/phpunit/src/Util/Log/JUnit.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Log/TAP.php" name="bundle/vendor/phpunit/phpunit/src/Util/Log/TAP.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/PHP/Default.php" name="bundle/vendor/phpunit/phpunit/src/Util/PHP/Default.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" name="bundle/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/PHP/Windows.php" name="bundle/vendor/phpunit/phpunit/src/Util/PHP/Windows.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/PHP/Template/TestCaseMethod.tpl.dist" name="bundle/vendor/phpunit/phpunit/src/Util/PHP/Template/TestCaseMethod.tpl.dist" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/TestDox/NamePrettifier.php" name="bundle/vendor/phpunit/phpunit/src/Util/TestDox/NamePrettifier.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter.php" name="bundle/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/HTML.php" name="bundle/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/HTML.php" />
    <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/Text.php" name="bundle/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/Text.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/.gitattributes" name="bundle/vendor/phpunit/phpunit-mock-objects/.gitattributes" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/.gitignore" name="bundle/vendor/phpunit/phpunit-mock-objects/.gitignore" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/.travis.yml" name="bundle/vendor/phpunit/phpunit-mock-objects/.travis.yml" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/build.xml" name="bundle/vendor/phpunit/phpunit-mock-objects/build.xml" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/CONTRIBUTING.md" name="bundle/vendor/phpunit/phpunit-mock-objects/CONTRIBUTING.md" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/LICENSE" name="bundle/vendor/phpunit/phpunit-mock-objects/LICENSE" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/phpunit.xml.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/phpunit.xml.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/README.md" name="bundle/vendor/phpunit/phpunit-mock-objects/README.md" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/build/travis-ci.xml" name="bundle/vendor/phpunit/phpunit-mock-objects/build/travis-ci.xml" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/InvocationMocker.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/InvocationMocker.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invokable.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invokable.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockBuilder.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockBuilder.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockObject.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockObject.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Verifiable.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Verifiable.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Identity.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Identity.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/InvocationMocker.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/InvocationMocker.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Match.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Match.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/MethodNameMatch.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/MethodNameMatch.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Namespace.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Namespace.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/ParametersMatch.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/ParametersMatch.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Stub.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Stub.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/BadMethodCallException.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/BadMethodCallException.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/Exception.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/Exception.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/RuntimeException.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/RuntimeException.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_class.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_class.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_class_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_class_method.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_clone.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_clone.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_method.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_static_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/mocked_static_method.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/proxied_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/proxied_method.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/trait_class.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/trait_class.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/unmocked_clone.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/unmocked_clone.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/wsdl_class.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/wsdl_class.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/wsdl_method.tpl.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator/wsdl_method.tpl.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Object.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Object.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Static.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Static.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyInvokedCount.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyInvokedCount.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyParameters.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyParameters.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/ConsecutiveParameters.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/ConsecutiveParameters.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Invocation.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Invocation.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtIndex.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtIndex.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastCount.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastCount.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastOnce.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastOnce.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtMostCount.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtMostCount.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedCount.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedCount.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedRecorder.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedRecorder.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/MethodName.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/MethodName.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Parameters.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Parameters.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/StatelessInvocation.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/StatelessInvocation.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ConsecutiveCalls.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ConsecutiveCalls.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Exception.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Exception.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/MatcherCollection.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/MatcherCollection.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Return.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Return.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnArgument.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnArgument.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnCallback.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnCallback.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnSelf.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnSelf.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnValueMap.php" name="bundle/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnValueMap.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/.gitattributes" name="bundle/vendor/phpunit/phpunit-story/.gitattributes" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/.gitignore" name="bundle/vendor/phpunit/phpunit-story/.gitignore" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/build.xml" name="bundle/vendor/phpunit/phpunit-story/build.xml" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/ChangeLog.markdown" name="bundle/vendor/phpunit/phpunit-story/ChangeLog.markdown" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/LICENSE" name="bundle/vendor/phpunit/phpunit-story/LICENSE" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/package.xml" name="bundle/vendor/phpunit/phpunit-story/package.xml" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/phpunit.xml.dist" name="bundle/vendor/phpunit/phpunit-story/phpunit.xml.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Autoload.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Autoload.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Autoload.php.in" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Autoload.php.in" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Given.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Given.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Scenario.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Scenario.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Step.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Step.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/TestCase.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/TestCase.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Then.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/Then.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/When.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/When.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/HTML.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/HTML.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Text.php" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Text.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenario.html.dist" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenario.html.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenarios.html.dist" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenarios.html.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenario_header.html.dist" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/scenario_header.html.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/step.html.dist" name="bundle/vendor/phpunit/phpunit-story/PHPUnit/Extensions/Story/ResultPrinter/Template/step.html.dist" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/Functional/default.phpt" name="bundle/vendor/phpunit/phpunit-story/Tests/Functional/default.phpt" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/Functional/story.phpt" name="bundle/vendor/phpunit/phpunit-story/Tests/Functional/story.phpt" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/Functional/testdox.phpt" name="bundle/vendor/phpunit/phpunit-story/Tests/Functional/testdox.phpt" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/_files/BowlingGame.php" name="bundle/vendor/phpunit/phpunit-story/Tests/_files/BowlingGame.php" />
-   <install as="Horde/Test/vendor/phpunit/phpunit-story/Tests/_files/BowlingGameSpec.php" name="bundle/vendor/phpunit/phpunit-story/Tests/_files/BowlingGameSpec.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/TestSuiteIterator.php" name="bundle/vendor/phpunit/phpunit/src/Util/TestSuiteIterator.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/Type.php" name="bundle/vendor/phpunit/phpunit/src/Util/Type.php" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/src/Util/XML.php" name="bundle/vendor/phpunit/phpunit/src/Util/XML.php" />
    <install as="Horde/Test/vendor/sebastian/comparator/.gitignore" name="bundle/vendor/sebastian/comparator/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/comparator/.travis.yml" name="bundle/vendor/sebastian/comparator/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/comparator/build.xml" name="bundle/vendor/sebastian/comparator/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/comparator/build/travis-ci.xml" name="bundle/vendor/sebastian/comparator/build/travis-ci.xml" />
+   <install as="Horde/Test/vendor/sebastian/comparator/composer.json" name="bundle/vendor/sebastian/comparator/composer.json" />
    <install as="Horde/Test/vendor/sebastian/comparator/LICENSE" name="bundle/vendor/sebastian/comparator/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/comparator/phpunit.xml.dist" name="bundle/vendor/sebastian/comparator/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/comparator/README.md" name="bundle/vendor/sebastian/comparator/README.md" />
-   <install as="Horde/Test/vendor/sebastian/comparator/build/travis-ci.xml" name="bundle/vendor/sebastian/comparator/build/travis-ci.xml" />
    <install as="Horde/Test/vendor/sebastian/comparator/src/ArrayComparator.php" name="bundle/vendor/sebastian/comparator/src/ArrayComparator.php" />
    <install as="Horde/Test/vendor/sebastian/comparator/src/Comparator.php" name="bundle/vendor/sebastian/comparator/src/Comparator.php" />
    <install as="Horde/Test/vendor/sebastian/comparator/src/ComparisonFailure.php" name="bundle/vendor/sebastian/comparator/src/ComparisonFailure.php" />
@@ -1887,20 +1920,22 @@
    <install as="Horde/Test/vendor/sebastian/diff/.php_cs" name="bundle/vendor/sebastian/diff/.php_cs" />
    <install as="Horde/Test/vendor/sebastian/diff/.travis.yml" name="bundle/vendor/sebastian/diff/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/diff/build.xml" name="bundle/vendor/sebastian/diff/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/diff/composer.json" name="bundle/vendor/sebastian/diff/composer.json" />
    <install as="Horde/Test/vendor/sebastian/diff/LICENSE" name="bundle/vendor/sebastian/diff/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/diff/phpunit.xml.dist" name="bundle/vendor/sebastian/diff/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/diff/README.md" name="bundle/vendor/sebastian/diff/README.md" />
    <install as="Horde/Test/vendor/sebastian/diff/src/Chunk.php" name="bundle/vendor/sebastian/diff/src/Chunk.php" />
    <install as="Horde/Test/vendor/sebastian/diff/src/Diff.php" name="bundle/vendor/sebastian/diff/src/Diff.php" />
    <install as="Horde/Test/vendor/sebastian/diff/src/Differ.php" name="bundle/vendor/sebastian/diff/src/Differ.php" />
-   <install as="Horde/Test/vendor/sebastian/diff/src/Line.php" name="bundle/vendor/sebastian/diff/src/Line.php" />
-   <install as="Horde/Test/vendor/sebastian/diff/src/Parser.php" name="bundle/vendor/sebastian/diff/src/Parser.php" />
    <install as="Horde/Test/vendor/sebastian/diff/src/LCS/LongestCommonSubsequence.php" name="bundle/vendor/sebastian/diff/src/LCS/LongestCommonSubsequence.php" />
    <install as="Horde/Test/vendor/sebastian/diff/src/LCS/MemoryEfficientLongestCommonSubsequenceImplementation.php" name="bundle/vendor/sebastian/diff/src/LCS/MemoryEfficientLongestCommonSubsequenceImplementation.php" />
    <install as="Horde/Test/vendor/sebastian/diff/src/LCS/TimeEfficientLongestCommonSubsequenceImplementation.php" name="bundle/vendor/sebastian/diff/src/LCS/TimeEfficientLongestCommonSubsequenceImplementation.php" />
+   <install as="Horde/Test/vendor/sebastian/diff/src/Line.php" name="bundle/vendor/sebastian/diff/src/Line.php" />
+   <install as="Horde/Test/vendor/sebastian/diff/src/Parser.php" name="bundle/vendor/sebastian/diff/src/Parser.php" />
    <install as="Horde/Test/vendor/sebastian/environment/.gitignore" name="bundle/vendor/sebastian/environment/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/environment/.travis.yml" name="bundle/vendor/sebastian/environment/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/environment/build.xml" name="bundle/vendor/sebastian/environment/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/environment/composer.json" name="bundle/vendor/sebastian/environment/composer.json" />
    <install as="Horde/Test/vendor/sebastian/environment/LICENSE" name="bundle/vendor/sebastian/environment/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/environment/README.md" name="bundle/vendor/sebastian/environment/README.md" />
    <install as="Horde/Test/vendor/sebastian/environment/src/Console.php" name="bundle/vendor/sebastian/environment/src/Console.php" />
@@ -1910,6 +1945,7 @@
    <install as="Horde/Test/vendor/sebastian/exporter/.gitignore" name="bundle/vendor/sebastian/exporter/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/exporter/.travis.yml" name="bundle/vendor/sebastian/exporter/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/exporter/build.xml" name="bundle/vendor/sebastian/exporter/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/exporter/composer.json" name="bundle/vendor/sebastian/exporter/composer.json" />
    <install as="Horde/Test/vendor/sebastian/exporter/LICENSE" name="bundle/vendor/sebastian/exporter/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/exporter/phpunit.xml.dist" name="bundle/vendor/sebastian/exporter/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/exporter/README.md" name="bundle/vendor/sebastian/exporter/README.md" />
@@ -1918,6 +1954,7 @@
    <install as="Horde/Test/vendor/sebastian/global-state/.gitignore" name="bundle/vendor/sebastian/global-state/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/global-state/.travis.yml" name="bundle/vendor/sebastian/global-state/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/global-state/build.xml" name="bundle/vendor/sebastian/global-state/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/global-state/composer.json" name="bundle/vendor/sebastian/global-state/composer.json" />
    <install as="Horde/Test/vendor/sebastian/global-state/LICENSE" name="bundle/vendor/sebastian/global-state/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/global-state/phpunit.xml.dist" name="bundle/vendor/sebastian/global-state/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/global-state/README.md" name="bundle/vendor/sebastian/global-state/README.md" />
@@ -1930,6 +1967,7 @@
    <install as="Horde/Test/vendor/sebastian/recursion-context/.gitignore" name="bundle/vendor/sebastian/recursion-context/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/.travis.yml" name="bundle/vendor/sebastian/recursion-context/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/build.xml" name="bundle/vendor/sebastian/recursion-context/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/recursion-context/composer.json" name="bundle/vendor/sebastian/recursion-context/composer.json" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/LICENSE" name="bundle/vendor/sebastian/recursion-context/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/phpunit.xml.dist" name="bundle/vendor/sebastian/recursion-context/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/README.md" name="bundle/vendor/sebastian/recursion-context/README.md" />
@@ -1939,31 +1977,27 @@
    <install as="Horde/Test/vendor/sebastian/recursion-context/tests/ContextTest.php" name="bundle/vendor/sebastian/recursion-context/tests/ContextTest.php" />
    <install as="Horde/Test/vendor/sebastian/version/.gitattributes" name="bundle/vendor/sebastian/version/.gitattributes" />
    <install as="Horde/Test/vendor/sebastian/version/.gitignore" name="bundle/vendor/sebastian/version/.gitignore" />
+   <install as="Horde/Test/vendor/sebastian/version/composer.json" name="bundle/vendor/sebastian/version/composer.json" />
    <install as="Horde/Test/vendor/sebastian/version/LICENSE" name="bundle/vendor/sebastian/version/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/version/README.md" name="bundle/vendor/sebastian/version/README.md" />
    <install as="Horde/Test/vendor/sebastian/version/src/Version.php" name="bundle/vendor/sebastian/version/src/Version.php" />
    <install as="Horde/Test/vendor/symfony/yaml/.gitignore" name="bundle/vendor/symfony/yaml/.gitignore" />
    <install as="Horde/Test/vendor/symfony/yaml/CHANGELOG.md" name="bundle/vendor/symfony/yaml/CHANGELOG.md" />
+   <install as="Horde/Test/vendor/symfony/yaml/Command/LintCommand.php" name="bundle/vendor/symfony/yaml/Command/LintCommand.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/composer.json" name="bundle/vendor/symfony/yaml/composer.json" />
    <install as="Horde/Test/vendor/symfony/yaml/Dumper.php" name="bundle/vendor/symfony/yaml/Dumper.php" />
    <install as="Horde/Test/vendor/symfony/yaml/Escaper.php" name="bundle/vendor/symfony/yaml/Escaper.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Exception/DumpException.php" name="bundle/vendor/symfony/yaml/Exception/DumpException.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Exception/ExceptionInterface.php" name="bundle/vendor/symfony/yaml/Exception/ExceptionInterface.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Exception/ParseException.php" name="bundle/vendor/symfony/yaml/Exception/ParseException.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Exception/RuntimeException.php" name="bundle/vendor/symfony/yaml/Exception/RuntimeException.php" />
    <install as="Horde/Test/vendor/symfony/yaml/Inline.php" name="bundle/vendor/symfony/yaml/Inline.php" />
    <install as="Horde/Test/vendor/symfony/yaml/LICENSE" name="bundle/vendor/symfony/yaml/LICENSE" />
    <install as="Horde/Test/vendor/symfony/yaml/Parser.php" name="bundle/vendor/symfony/yaml/Parser.php" />
    <install as="Horde/Test/vendor/symfony/yaml/phpunit.xml.dist" name="bundle/vendor/symfony/yaml/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/symfony/yaml/README.md" name="bundle/vendor/symfony/yaml/README.md" />
-   <install as="Horde/Test/vendor/symfony/yaml/Unescaper.php" name="bundle/vendor/symfony/yaml/Unescaper.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Yaml.php" name="bundle/vendor/symfony/yaml/Yaml.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Command/LintCommand.php" name="bundle/vendor/symfony/yaml/Command/LintCommand.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Exception/DumpException.php" name="bundle/vendor/symfony/yaml/Exception/DumpException.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Exception/ExceptionInterface.php" name="bundle/vendor/symfony/yaml/Exception/ExceptionInterface.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Exception/ParseException.php" name="bundle/vendor/symfony/yaml/Exception/ParseException.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Exception/RuntimeException.php" name="bundle/vendor/symfony/yaml/Exception/RuntimeException.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Tests/DumperTest.php" name="bundle/vendor/symfony/yaml/Tests/DumperTest.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Tests/InlineTest.php" name="bundle/vendor/symfony/yaml/Tests/InlineTest.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Tests/ParseExceptionTest.php" name="bundle/vendor/symfony/yaml/Tests/ParseExceptionTest.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Tests/ParserTest.php" name="bundle/vendor/symfony/yaml/Tests/ParserTest.php" />
-   <install as="Horde/Test/vendor/symfony/yaml/Tests/YamlTest.php" name="bundle/vendor/symfony/yaml/Tests/YamlTest.php" />
    <install as="Horde/Test/vendor/symfony/yaml/Tests/Command/LintCommandTest.php" name="bundle/vendor/symfony/yaml/Tests/Command/LintCommandTest.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Tests/DumperTest.php" name="bundle/vendor/symfony/yaml/Tests/DumperTest.php" />
    <install as="Horde/Test/vendor/symfony/yaml/Tests/Fixtures/arrow.gif" name="bundle/vendor/symfony/yaml/Tests/Fixtures/arrow.gif" />
    <install as="Horde/Test/vendor/symfony/yaml/Tests/Fixtures/embededPhp.yml" name="bundle/vendor/symfony/yaml/Tests/Fixtures/embededPhp.yml" />
    <install as="Horde/Test/vendor/symfony/yaml/Tests/Fixtures/escapedCharacters.yml" name="bundle/vendor/symfony/yaml/Tests/Fixtures/escapedCharacters.yml" />
@@ -1986,19 +2020,21 @@
    <install as="Horde/Test/vendor/symfony/yaml/Tests/Fixtures/YtsNullsAndEmpties.yml" name="bundle/vendor/symfony/yaml/Tests/Fixtures/YtsNullsAndEmpties.yml" />
    <install as="Horde/Test/vendor/symfony/yaml/Tests/Fixtures/YtsSpecificationExamples.yml" name="bundle/vendor/symfony/yaml/Tests/Fixtures/YtsSpecificationExamples.yml" />
    <install as="Horde/Test/vendor/symfony/yaml/Tests/Fixtures/YtsTypeTransfers.yml" name="bundle/vendor/symfony/yaml/Tests/Fixtures/YtsTypeTransfers.yml" />
-   <install as="COPYING" name="doc/Horde/Test/COPYING" />
+   <install as="Horde/Test/vendor/symfony/yaml/Tests/InlineTest.php" name="bundle/vendor/symfony/yaml/Tests/InlineTest.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Tests/ParseExceptionTest.php" name="bundle/vendor/symfony/yaml/Tests/ParseExceptionTest.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Tests/ParserTest.php" name="bundle/vendor/symfony/yaml/Tests/ParserTest.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Tests/YamlTest.php" name="bundle/vendor/symfony/yaml/Tests/YamlTest.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Unescaper.php" name="bundle/vendor/symfony/yaml/Unescaper.php" />
+   <install as="Horde/Test/vendor/symfony/yaml/Yaml.php" name="bundle/vendor/symfony/yaml/Yaml.php" />
    <install as="template/packagetest/AllTests.php" name="doc/Horde/Test/template/packagetest/AllTests.php" />
    <install as="template/packagetest/bootstrap.php" name="doc/Horde/Test/template/packagetest/bootstrap.php" />
    <install as="template/packagetest/phpunit.xml" name="doc/Horde/Test/template/packagetest/phpunit.xml" />
    <install as="Horde/Test/AllTests.php" name="lib/Horde/Test/AllTests.php" />
+   <install as="Horde/Test/AllTests/TestRunner.php" name="lib/Horde/Test/AllTests/TestRunner.php" />
    <install as="Horde/Test/Autoload.php" name="lib/Horde/Test/Autoload.php" />
    <install as="Horde/Test/Bootstrap.php" name="lib/Horde/Test/Bootstrap.php" />
    <install as="Horde/Test/Case.php" name="lib/Horde/Test/Case.php" />
    <install as="Horde/Test/Exception.php" name="lib/Horde/Test/Exception.php" />
-   <install as="Horde/Test/Functional.php" name="lib/Horde/Test/Functional.php" />
-   <install as="Horde/Test/Log.php" name="lib/Horde/Test/Log.php" />
-   <install as="Horde/Test/Setup.php" name="lib/Horde/Test/Setup.php" />
-   <install as="Horde/Test/AllTests/TestRunner.php" name="lib/Horde/Test/AllTests/TestRunner.php" />
    <install as="Horde/Test/Factory/Alarm.php" name="lib/Horde/Test/Factory/Alarm.php" />
    <install as="Horde/Test/Factory/Cache.php" name="lib/Horde/Test/Factory/Cache.php" />
    <install as="Horde/Test/Factory/Db.php" name="lib/Horde/Test/Factory/Db.php" />
@@ -2012,11 +2048,15 @@
    <install as="Horde/Test/Factory/Registry.php" name="lib/Horde/Test/Factory/Registry.php" />
    <install as="Horde/Test/Factory/Session.php" name="lib/Horde/Test/Factory/Session.php" />
    <install as="Horde/Test/Factory/Share.php" name="lib/Horde/Test/Factory/Share.php" />
+   <install as="Horde/Test/Functional.php" name="lib/Horde/Test/Functional.php" />
+   <install as="Horde/Test/Log.php" name="lib/Horde/Test/Log.php" />
+   <install as="Horde/Test/Setup.php" name="lib/Horde/Test/Setup.php" />
    <install as="Horde/Test/Stub/Cli.php" name="lib/Horde/Test/Stub/Cli.php" />
    <install as="Horde/Test/Stub/Factory.php" name="lib/Horde/Test/Stub/Factory.php" />
    <install as="Horde/Test/Stub/Parser.php" name="lib/Horde/Test/Stub/Parser.php" />
    <install as="Horde/Test/Stub/Registry.php" name="lib/Horde/Test/Stub/Registry.php" />
    <install as="Horde/Test/Stub/Registry/Loadconfig.php" name="lib/Horde/Test/Stub/Registry/Loadconfig.php" />
+   <install as="LICENSE" name="LICENSE" />
   </filelist>
  </phprelease>
  <changelog>
@@ -2554,7 +2594,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-05-03</date>
+   <date>2017-10-17</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * 
