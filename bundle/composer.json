@@ -6,7 +6,7 @@
         }
     ],
     "require": {
-        "phpdocumentor/reflection-docblock": "dev-release/2.x"
+        "phpdocumentor/reflection-docblock": "dev-release/2.x",
         "phpunit/phpunit": "~4",
         "phpunit/phpunit-story": "~1.0"
     }
