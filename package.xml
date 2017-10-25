@@ -16,7 +16,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-25</date>
  <version>
   <release>2.6.4</release>
   <api>2.6.0</api>
@@ -997,6 +997,7 @@
        <file name="build.xml" role="php" />
        <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
+       <file name="phpunit.xml" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/sebastian/diff -->
@@ -1922,6 +1923,7 @@
    <install as="Horde/Test/vendor/sebastian/diff/build.xml" name="bundle/vendor/sebastian/diff/build.xml" />
    <install as="Horde/Test/vendor/sebastian/diff/composer.json" name="bundle/vendor/sebastian/diff/composer.json" />
    <install as="Horde/Test/vendor/sebastian/diff/LICENSE" name="bundle/vendor/sebastian/diff/LICENSE" />
+   <install as="Horde/Test/vendor/sebastian/diff/phpunit.xml" name="bundle/vendor/sebastian/diff/phpunit.xml" />
    <install as="Horde/Test/vendor/sebastian/diff/phpunit.xml.dist" name="bundle/vendor/sebastian/diff/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/diff/README.md" name="bundle/vendor/sebastian/diff/README.md" />
    <install as="Horde/Test/vendor/sebastian/diff/src/Chunk.php" name="bundle/vendor/sebastian/diff/src/Chunk.php" />
@@ -2594,7 +2596,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-10-17</date>
+   <date>2017-10-25</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * 
