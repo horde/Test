@@ -16,7 +16,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-25</date>
+ <date>2017-10-27</date>
  <version>
   <release>2.6.4</release>
   <api>2.6.0</api>
@@ -1148,6 +1148,7 @@
         <file name="phpunit.xml" role="doc" />
        </dir> <!-- /doc/Horde/Test/template/packagetest -->
       </dir> <!-- /doc/Horde/Test/template -->
+      <file name="CHANGES" role="doc" />
      </dir> <!-- /doc/Horde/Test -->
     </dir> <!-- /doc/Horde -->
    </dir> <!-- /doc -->
@@ -2027,6 +2028,7 @@
    <install as="Horde/Test/vendor/symfony/yaml/Tests/YamlTest.php" name="bundle/vendor/symfony/yaml/Tests/YamlTest.php" />
    <install as="Horde/Test/vendor/symfony/yaml/Unescaper.php" name="bundle/vendor/symfony/yaml/Unescaper.php" />
    <install as="Horde/Test/vendor/symfony/yaml/Yaml.php" name="bundle/vendor/symfony/yaml/Yaml.php" />
+   <install as="CHANGES" name="doc/Horde/Test/CHANGES" />
    <install as="template/packagetest/AllTests.php" name="doc/Horde/Test/template/packagetest/AllTests.php" />
    <install as="template/packagetest/bootstrap.php" name="doc/Horde/Test/template/packagetest/bootstrap.php" />
    <install as="template/packagetest/phpunit.xml" name="doc/Horde/Test/template/packagetest/phpunit.xml" />
@@ -2595,7 +2597,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-10-25</date>
+   <date>2017-10-27</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
    </notes>
