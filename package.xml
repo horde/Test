@@ -16,7 +16,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-05-03</date>
+ <date>2017-10-27</date>
  <version>
   <release>2.6.4</release>
   <api>2.6.0</api>
@@ -63,6 +63,7 @@
        <file name=".scrutinizer.yml" role="php" />
        <file name=".travis.install.sh" role="php" />
        <file name=".travis.yml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpmd.xml.dist" role="php" />
@@ -111,6 +112,8 @@
        </dir> <!-- /bundle/vendor/phpdocumentor/reflection-docblock/src -->
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
+       <file name="composer.json" role="php" />
+       <file name="composer.lock" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -370,6 +373,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="CHANGES.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
@@ -536,6 +540,7 @@
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
        <file name="ChangeLog-2.2.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
@@ -550,6 +555,7 @@
        <file name=".gitattributes" role="php" />
        <file name=".gitignore" role="php" />
        <file name="ChangeLog.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpunit/php-file-iterator -->
@@ -559,6 +565,7 @@
        </dir> <!-- /bundle/vendor/phpunit/php-text-template/src -->
        <file name=".gitattributes" role="php" />
        <file name=".gitignore" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpunit/php-text-template -->
@@ -569,6 +576,7 @@
        <file name=".gitattributes" role="php" />
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpunit/php-timer -->
@@ -589,6 +597,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpunit/php-token-stream -->
@@ -774,6 +783,7 @@
        <file name="ChangeLog-4.7.md" role="php" />
        <file name="ChangeLog-4.8.md" role="php" />
        <file name="CODE_OF_CONDUCT.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit" role="php" />
@@ -859,6 +869,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="CONTRIBUTING.md" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
@@ -905,6 +916,7 @@
        <file name=".gitignore" role="php" />
        <file name="build.xml" role="php" />
        <file name="ChangeLog.markdown" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="package.xml" role="php" />
        <file name="phpunit.xml.dist" role="php" />
@@ -961,6 +973,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -982,7 +995,9 @@
        <file name=".php_cs" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
+       <file name="phpunit.xml" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/sebastian/diff -->
@@ -998,6 +1013,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/sebastian/environment -->
@@ -1011,6 +1027,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -1027,6 +1044,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -1043,6 +1061,7 @@
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
        <file name="build.xml" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -1053,6 +1072,7 @@
        </dir> <!-- /bundle/vendor/sebastian/version/src -->
        <file name=".gitattributes" role="php" />
        <file name=".gitignore" role="php" />
+       <file name="composer.json" role="php" />
        <file name="LICENSE" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/sebastian/version -->
@@ -1104,6 +1124,7 @@
        </dir> <!-- /bundle/vendor/symfony/yaml/Tests -->
        <file name=".gitignore" role="php" />
        <file name="CHANGELOG.md" role="php" />
+       <file name="composer.json" role="php" />
        <file name="Dumper.php" role="php" />
        <file name="Escaper.php" role="php" />
        <file name="Inline.php" role="php" />
@@ -1239,6 +1260,7 @@
    <install as="Horde/Test/vendor/doctrine/instantiator/.scrutinizer.yml" name="bundle/vendor/doctrine/instantiator/.scrutinizer.yml" />
    <install as="Horde/Test/vendor/doctrine/instantiator/.travis.install.sh" name="bundle/vendor/doctrine/instantiator/.travis.install.sh" />
    <install as="Horde/Test/vendor/doctrine/instantiator/.travis.yml" name="bundle/vendor/doctrine/instantiator/.travis.yml" />
+   <install as="Horde/Test/vendor/doctrine/instantiator/composer.json" name="bundle/vendor/doctrine/instantiator/composer.json" />
    <install as="Horde/Test/vendor/doctrine/instantiator/CONTRIBUTING.md" name="bundle/vendor/doctrine/instantiator/CONTRIBUTING.md" />
    <install as="Horde/Test/vendor/doctrine/instantiator/LICENSE" name="bundle/vendor/doctrine/instantiator/LICENSE" />
    <install as="Horde/Test/vendor/doctrine/instantiator/phpmd.xml.dist" name="bundle/vendor/doctrine/instantiator/phpmd.xml.dist" />
@@ -1251,6 +1273,8 @@
    <install as="Horde/Test/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php" name="bundle/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/.gitignore" name="bundle/vendor/phpdocumentor/reflection-docblock/.gitignore" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/.travis.yml" name="bundle/vendor/phpdocumentor/reflection-docblock/.travis.yml" />
+   <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/composer.json" name="bundle/vendor/phpdocumentor/reflection-docblock/composer.json" />
+   <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/composer.lock" name="bundle/vendor/phpdocumentor/reflection-docblock/composer.lock" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/LICENSE" name="bundle/vendor/phpdocumentor/reflection-docblock/LICENSE" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/phpunit.xml.dist" name="bundle/vendor/phpdocumentor/reflection-docblock/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/phpdocumentor/reflection-docblock/README.md" name="bundle/vendor/phpdocumentor/reflection-docblock/README.md" />
@@ -1282,6 +1306,7 @@
    <install as="Horde/Test/vendor/phpspec/prophecy/.gitignore" name="bundle/vendor/phpspec/prophecy/.gitignore" />
    <install as="Horde/Test/vendor/phpspec/prophecy/.travis.yml" name="bundle/vendor/phpspec/prophecy/.travis.yml" />
    <install as="Horde/Test/vendor/phpspec/prophecy/CHANGES.md" name="bundle/vendor/phpspec/prophecy/CHANGES.md" />
+   <install as="Horde/Test/vendor/phpspec/prophecy/composer.json" name="bundle/vendor/phpspec/prophecy/composer.json" />
    <install as="Horde/Test/vendor/phpspec/prophecy/CONTRIBUTING.md" name="bundle/vendor/phpspec/prophecy/CONTRIBUTING.md" />
    <install as="Horde/Test/vendor/phpspec/prophecy/LICENSE" name="bundle/vendor/phpspec/prophecy/LICENSE" />
    <install as="Horde/Test/vendor/phpspec/prophecy/README.md" name="bundle/vendor/phpspec/prophecy/README.md" />
@@ -1459,6 +1484,7 @@
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/.travis.yml" name="bundle/vendor/phpunit/php-code-coverage/.travis.yml" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/build.xml" name="bundle/vendor/phpunit/php-code-coverage/build.xml" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/ChangeLog-2.2.md" name="bundle/vendor/phpunit/php-code-coverage/ChangeLog-2.2.md" />
+   <install as="Horde/Test/vendor/phpunit/php-code-coverage/composer.json" name="bundle/vendor/phpunit/php-code-coverage/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/CONTRIBUTING.md" name="bundle/vendor/phpunit/php-code-coverage/CONTRIBUTING.md" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/LICENSE" name="bundle/vendor/phpunit/php-code-coverage/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-code-coverage/phpunit.xml.dist" name="bundle/vendor/phpunit/php-code-coverage/phpunit.xml.dist" />
@@ -1576,6 +1602,7 @@
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/.gitattributes" name="bundle/vendor/phpunit/php-file-iterator/.gitattributes" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/.gitignore" name="bundle/vendor/phpunit/php-file-iterator/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/ChangeLog.md" name="bundle/vendor/phpunit/php-file-iterator/ChangeLog.md" />
+   <install as="Horde/Test/vendor/phpunit/php-file-iterator/composer.json" name="bundle/vendor/phpunit/php-file-iterator/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/LICENSE" name="bundle/vendor/phpunit/php-file-iterator/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/README.md" name="bundle/vendor/phpunit/php-file-iterator/README.md" />
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/src/Facade.php" name="bundle/vendor/phpunit/php-file-iterator/src/Facade.php" />
@@ -1583,12 +1610,14 @@
    <install as="Horde/Test/vendor/phpunit/php-file-iterator/src/Iterator.php" name="bundle/vendor/phpunit/php-file-iterator/src/Iterator.php" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/.gitattributes" name="bundle/vendor/phpunit/php-text-template/.gitattributes" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/.gitignore" name="bundle/vendor/phpunit/php-text-template/.gitignore" />
+   <install as="Horde/Test/vendor/phpunit/php-text-template/composer.json" name="bundle/vendor/phpunit/php-text-template/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/LICENSE" name="bundle/vendor/phpunit/php-text-template/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/README.md" name="bundle/vendor/phpunit/php-text-template/README.md" />
    <install as="Horde/Test/vendor/phpunit/php-text-template/src/Template.php" name="bundle/vendor/phpunit/php-text-template/src/Template.php" />
    <install as="Horde/Test/vendor/phpunit/php-timer/.gitattributes" name="bundle/vendor/phpunit/php-timer/.gitattributes" />
    <install as="Horde/Test/vendor/phpunit/php-timer/.gitignore" name="bundle/vendor/phpunit/php-timer/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/php-timer/.travis.yml" name="bundle/vendor/phpunit/php-timer/.travis.yml" />
+   <install as="Horde/Test/vendor/phpunit/php-timer/composer.json" name="bundle/vendor/phpunit/php-timer/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-timer/LICENSE" name="bundle/vendor/phpunit/php-timer/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-timer/README.md" name="bundle/vendor/phpunit/php-timer/README.md" />
    <install as="Horde/Test/vendor/phpunit/php-timer/src/Timer.php" name="bundle/vendor/phpunit/php-timer/src/Timer.php" />
@@ -1596,6 +1625,7 @@
    <install as="Horde/Test/vendor/phpunit/php-token-stream/.gitignore" name="bundle/vendor/phpunit/php-token-stream/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/.travis.yml" name="bundle/vendor/phpunit/php-token-stream/.travis.yml" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/build.xml" name="bundle/vendor/phpunit/php-token-stream/build.xml" />
+   <install as="Horde/Test/vendor/phpunit/php-token-stream/composer.json" name="bundle/vendor/phpunit/php-token-stream/composer.json" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/LICENSE" name="bundle/vendor/phpunit/php-token-stream/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/README.md" name="bundle/vendor/phpunit/php-token-stream/README.md" />
    <install as="Horde/Test/vendor/phpunit/php-token-stream/build/phpunit.xml" name="bundle/vendor/phpunit/php-token-stream/build/phpunit.xml" />
@@ -1617,6 +1647,7 @@
    <install as="Horde/Test/vendor/phpunit/phpunit/ChangeLog-4.7.md" name="bundle/vendor/phpunit/phpunit/ChangeLog-4.7.md" />
    <install as="Horde/Test/vendor/phpunit/phpunit/ChangeLog-4.8.md" name="bundle/vendor/phpunit/phpunit/ChangeLog-4.8.md" />
    <install as="Horde/Test/vendor/phpunit/phpunit/CODE_OF_CONDUCT.md" name="bundle/vendor/phpunit/phpunit/CODE_OF_CONDUCT.md" />
+   <install as="Horde/Test/vendor/phpunit/phpunit/composer.json" name="bundle/vendor/phpunit/phpunit/composer.json" />
    <install as="Horde/Test/vendor/phpunit/phpunit/CONTRIBUTING.md" name="bundle/vendor/phpunit/phpunit/CONTRIBUTING.md" />
    <install as="Horde/Test/vendor/phpunit/phpunit/LICENSE" name="bundle/vendor/phpunit/phpunit/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/phpunit/phpunit" name="bundle/vendor/phpunit/phpunit/phpunit" />
@@ -1755,6 +1786,7 @@
    <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/.gitignore" name="bundle/vendor/phpunit/phpunit-mock-objects/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/.travis.yml" name="bundle/vendor/phpunit/phpunit-mock-objects/.travis.yml" />
    <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/build.xml" name="bundle/vendor/phpunit/phpunit-mock-objects/build.xml" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/composer.json" name="bundle/vendor/phpunit/phpunit-mock-objects/composer.json" />
    <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/CONTRIBUTING.md" name="bundle/vendor/phpunit/phpunit-mock-objects/CONTRIBUTING.md" />
    <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/LICENSE" name="bundle/vendor/phpunit/phpunit-mock-objects/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/phpunit-mock-objects/phpunit.xml.dist" name="bundle/vendor/phpunit/phpunit-mock-objects/phpunit.xml.dist" />
@@ -1816,6 +1848,7 @@
    <install as="Horde/Test/vendor/phpunit/phpunit-story/.gitignore" name="bundle/vendor/phpunit/phpunit-story/.gitignore" />
    <install as="Horde/Test/vendor/phpunit/phpunit-story/build.xml" name="bundle/vendor/phpunit/phpunit-story/build.xml" />
    <install as="Horde/Test/vendor/phpunit/phpunit-story/ChangeLog.markdown" name="bundle/vendor/phpunit/phpunit-story/ChangeLog.markdown" />
+   <install as="Horde/Test/vendor/phpunit/phpunit-story/composer.json" name="bundle/vendor/phpunit/phpunit-story/composer.json" />
    <install as="Horde/Test/vendor/phpunit/phpunit-story/LICENSE" name="bundle/vendor/phpunit/phpunit-story/LICENSE" />
    <install as="Horde/Test/vendor/phpunit/phpunit-story/package.xml" name="bundle/vendor/phpunit/phpunit-story/package.xml" />
    <install as="Horde/Test/vendor/phpunit/phpunit-story/phpunit.xml.dist" name="bundle/vendor/phpunit/phpunit-story/phpunit.xml.dist" />
@@ -1842,6 +1875,7 @@
    <install as="Horde/Test/vendor/sebastian/comparator/.gitignore" name="bundle/vendor/sebastian/comparator/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/comparator/.travis.yml" name="bundle/vendor/sebastian/comparator/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/comparator/build.xml" name="bundle/vendor/sebastian/comparator/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/comparator/composer.json" name="bundle/vendor/sebastian/comparator/composer.json" />
    <install as="Horde/Test/vendor/sebastian/comparator/LICENSE" name="bundle/vendor/sebastian/comparator/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/comparator/phpunit.xml.dist" name="bundle/vendor/sebastian/comparator/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/comparator/README.md" name="bundle/vendor/sebastian/comparator/README.md" />
@@ -1887,7 +1921,9 @@
    <install as="Horde/Test/vendor/sebastian/diff/.php_cs" name="bundle/vendor/sebastian/diff/.php_cs" />
    <install as="Horde/Test/vendor/sebastian/diff/.travis.yml" name="bundle/vendor/sebastian/diff/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/diff/build.xml" name="bundle/vendor/sebastian/diff/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/diff/composer.json" name="bundle/vendor/sebastian/diff/composer.json" />
    <install as="Horde/Test/vendor/sebastian/diff/LICENSE" name="bundle/vendor/sebastian/diff/LICENSE" />
+   <install as="Horde/Test/vendor/sebastian/diff/phpunit.xml" name="bundle/vendor/sebastian/diff/phpunit.xml" />
    <install as="Horde/Test/vendor/sebastian/diff/phpunit.xml.dist" name="bundle/vendor/sebastian/diff/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/diff/README.md" name="bundle/vendor/sebastian/diff/README.md" />
    <install as="Horde/Test/vendor/sebastian/diff/src/Chunk.php" name="bundle/vendor/sebastian/diff/src/Chunk.php" />
@@ -1901,6 +1937,7 @@
    <install as="Horde/Test/vendor/sebastian/environment/.gitignore" name="bundle/vendor/sebastian/environment/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/environment/.travis.yml" name="bundle/vendor/sebastian/environment/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/environment/build.xml" name="bundle/vendor/sebastian/environment/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/environment/composer.json" name="bundle/vendor/sebastian/environment/composer.json" />
    <install as="Horde/Test/vendor/sebastian/environment/LICENSE" name="bundle/vendor/sebastian/environment/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/environment/README.md" name="bundle/vendor/sebastian/environment/README.md" />
    <install as="Horde/Test/vendor/sebastian/environment/src/Console.php" name="bundle/vendor/sebastian/environment/src/Console.php" />
@@ -1910,6 +1947,7 @@
    <install as="Horde/Test/vendor/sebastian/exporter/.gitignore" name="bundle/vendor/sebastian/exporter/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/exporter/.travis.yml" name="bundle/vendor/sebastian/exporter/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/exporter/build.xml" name="bundle/vendor/sebastian/exporter/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/exporter/composer.json" name="bundle/vendor/sebastian/exporter/composer.json" />
    <install as="Horde/Test/vendor/sebastian/exporter/LICENSE" name="bundle/vendor/sebastian/exporter/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/exporter/phpunit.xml.dist" name="bundle/vendor/sebastian/exporter/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/exporter/README.md" name="bundle/vendor/sebastian/exporter/README.md" />
@@ -1918,6 +1956,7 @@
    <install as="Horde/Test/vendor/sebastian/global-state/.gitignore" name="bundle/vendor/sebastian/global-state/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/global-state/.travis.yml" name="bundle/vendor/sebastian/global-state/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/global-state/build.xml" name="bundle/vendor/sebastian/global-state/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/global-state/composer.json" name="bundle/vendor/sebastian/global-state/composer.json" />
    <install as="Horde/Test/vendor/sebastian/global-state/LICENSE" name="bundle/vendor/sebastian/global-state/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/global-state/phpunit.xml.dist" name="bundle/vendor/sebastian/global-state/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/global-state/README.md" name="bundle/vendor/sebastian/global-state/README.md" />
@@ -1930,6 +1969,7 @@
    <install as="Horde/Test/vendor/sebastian/recursion-context/.gitignore" name="bundle/vendor/sebastian/recursion-context/.gitignore" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/.travis.yml" name="bundle/vendor/sebastian/recursion-context/.travis.yml" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/build.xml" name="bundle/vendor/sebastian/recursion-context/build.xml" />
+   <install as="Horde/Test/vendor/sebastian/recursion-context/composer.json" name="bundle/vendor/sebastian/recursion-context/composer.json" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/LICENSE" name="bundle/vendor/sebastian/recursion-context/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/phpunit.xml.dist" name="bundle/vendor/sebastian/recursion-context/phpunit.xml.dist" />
    <install as="Horde/Test/vendor/sebastian/recursion-context/README.md" name="bundle/vendor/sebastian/recursion-context/README.md" />
@@ -1939,11 +1979,13 @@
    <install as="Horde/Test/vendor/sebastian/recursion-context/tests/ContextTest.php" name="bundle/vendor/sebastian/recursion-context/tests/ContextTest.php" />
    <install as="Horde/Test/vendor/sebastian/version/.gitattributes" name="bundle/vendor/sebastian/version/.gitattributes" />
    <install as="Horde/Test/vendor/sebastian/version/.gitignore" name="bundle/vendor/sebastian/version/.gitignore" />
+   <install as="Horde/Test/vendor/sebastian/version/composer.json" name="bundle/vendor/sebastian/version/composer.json" />
    <install as="Horde/Test/vendor/sebastian/version/LICENSE" name="bundle/vendor/sebastian/version/LICENSE" />
    <install as="Horde/Test/vendor/sebastian/version/README.md" name="bundle/vendor/sebastian/version/README.md" />
    <install as="Horde/Test/vendor/sebastian/version/src/Version.php" name="bundle/vendor/sebastian/version/src/Version.php" />
    <install as="Horde/Test/vendor/symfony/yaml/.gitignore" name="bundle/vendor/symfony/yaml/.gitignore" />
    <install as="Horde/Test/vendor/symfony/yaml/CHANGELOG.md" name="bundle/vendor/symfony/yaml/CHANGELOG.md" />
+   <install as="Horde/Test/vendor/symfony/yaml/composer.json" name="bundle/vendor/symfony/yaml/composer.json" />
    <install as="Horde/Test/vendor/symfony/yaml/Dumper.php" name="bundle/vendor/symfony/yaml/Dumper.php" />
    <install as="Horde/Test/vendor/symfony/yaml/Escaper.php" name="bundle/vendor/symfony/yaml/Escaper.php" />
    <install as="Horde/Test/vendor/symfony/yaml/Inline.php" name="bundle/vendor/symfony/yaml/Inline.php" />
@@ -2554,7 +2596,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-05-03</date>
+   <date>2017-10-27</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * 
