@@ -1,23 +1,23 @@
 {
     "name": "horde/test",
-    "description": "Horde testing base classes",
+    "description": "Unit testing library",
     "type": "library",
-    "homepage": "https://pear.horde.org",
+    "homepage": "https://www.horde.org/libraries/Horde_Test",
     "license": "LGPL-2.1",
     "authors": [
-        {
-            "name": "Chuck Hagenbuch",
-            "email": "chuck@horde.org",
-            "role": "lead"
-        },
         {
             "name": "Jan Schneider",
             "email": "jan@horde.org",
             "role": "lead"
+        },
+        {
+            "name": "Chuck Hagenbuch",
+            "email": "chuck@horde.org",
+            "role": "lead"
         }
     ],
     "version": "2.6.4",
-    "time": "2017-10-27",
+    "time": "2017-11-14",
     "repositories": [
         {
             "type": "pear",
