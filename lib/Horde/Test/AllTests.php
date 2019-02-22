@@ -127,8 +127,11 @@ class Horde_Test_AllTests
                 $base . PATH_SEPARATOR . $base . '/../lib' . PATH_SEPARATOR . get_include_path()
             );
         }
-
-        require_once 'Horde/Test/Bootstrap.php';
+        // In case of composer, this relative path won't work and the external
+        // autoloader should deal with it.
+        if (!class_exists('Horde_Test_Bootstrap')) {
+            require_once 'Horde/Test/Bootstrap.php';
+        }
         Horde_Test_Bootstrap::bootstrap($this->_dir);
 
         if (file_exists($this->_dir . '/Autoload.php')) {
