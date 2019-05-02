@@ -50,7 +50,11 @@ class Horde_Test_Bootstrap
                     $base . PATH_SEPARATOR . $base . '/../lib' . PATH_SEPARATOR . get_include_path()
                 );
             }
-            require_once 'Horde/Test/Autoload.php';
+            // In case of composer, this should already be autoloaded by the 
+            // caller and the relative path would not work
+            if (!class_exists('Horde_Test_Autoload')) {
+                require_once 'Horde/Test/Autoload.php';
+            }
             Horde_Test_Autoload::init();
         }
 
