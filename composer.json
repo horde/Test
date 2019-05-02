@@ -2,7 +2,7 @@
     "name": "horde/test",
     "description": "Unit testing library",
     "type": "horde-library",
-    "homepage": "https://www.horde.org",
+    "homepage": "https://www.horde.org/libraries/Horde_Test",
     "license": "LGPL-2.1",
     "authors": [
         {
@@ -17,33 +17,22 @@
         }
     ],
     "version": "2.6.4",
-    "time": "2019-02-13",
+    "time": "2019-05-02",
     "repositories": [
         {
-            "url": "https://github.com/horde/Support",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Util",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Cli",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Log",
-            "type": "vcs"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3.3 || ^7",
-        "horde/Support": "^2",
-        "horde/Util": "^2"
+        "horde/support": "dev-master",
+        "horde/util": "dev-master"
     },
     "suggest": {
-        "horde/Cli": "^2",
-        "horde/Log": "^2",
+        "horde/cli": "^2",
+        "horde/log": "^2",
         "ext-dom": "*",
         "ext-json": "*"
     },
