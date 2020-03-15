@@ -1031,9 +1031,7 @@ class PHPUnit_Framework_MockObject_Generator
             $typeDeclaration = '';
 
             if (!$forCall) {
-                if ($this->hasType($parameter)) {
-                    $typeDeclaration = (string) $parameter->getType() . ' ';
-                } elseif ($parameter->isArray()) {
+                if ($parameter->isArray()) {
                     $typeDeclaration = 'array ';
                 } elseif ((defined('HHVM_VERSION') || version_compare(PHP_VERSION, '5.4.0', '>='))
                           && $parameter->isCallable()) {
