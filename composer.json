@@ -26,13 +26,13 @@
     ],
     "require": {
         "horde/horde-installer-plugin": "*",
-        "php": "^5.3.3 || ^7",
-        "horde/support": "^2",
-        "horde/util": "^2"
+        "php": "^7",
+        "horde/support": "^3",
+        "horde/util": "^3"
     },
     "suggest": {
-        "horde/cli": "^2",
-        "horde/log": "^2",
+        "horde/cli": "^3",
+        "horde/log": "^3",
         "ext-dom": "*",
         "ext-json": "*"
     },
