@@ -23,7 +23,7 @@ class Horde_Test_Bootstrap
     private static $_runonce = false;
 
     /**
-     * Bootstrap code for Horde PEAR packages.
+     * Bootstrap code for Horde packages.
      *
      * @param string $dir           Base directory of tests.
      * @param boolean $no_autoload  Don't run default Horde_Test autoload
@@ -50,7 +50,9 @@ class Horde_Test_Bootstrap
                     $base . PATH_SEPARATOR . $base . '/../lib' . PATH_SEPARATOR . get_include_path()
                 );
             }
-            require_once 'Horde/Test/Autoload.php';
+            if (!class_exists(\Horde_Test_Autoload::class)) {
+                require_once 'Horde/Test/Autoload.php';
+            }
             Horde_Test_Autoload::init();
         }
 

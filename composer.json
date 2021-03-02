@@ -16,7 +16,7 @@
             "role": "lead"
         }
     ],
-    "version": "3.0.0alpha3",
+    "version": "3.0.0alpha2",
     "time": "2021-02-24",
     "repositories": [
         {
@@ -28,7 +28,8 @@
         "horde/horde-installer-plugin": "*",
         "php": "^7",
         "horde/support": "^3",
-        "horde/util": "^3"
+        "horde/util": "^3",
+        "phpunit/phpunit": "^9"
     },
     "suggest": {
         "horde/cli": "^3",

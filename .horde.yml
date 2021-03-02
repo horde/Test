@@ -20,7 +20,7 @@ authors:
     active: false
     role: lead
 version:
-  release: 3.0.0alpha3
+  release: 3.0.0alpha2
   api: 3.0.0alpha1
 state:
   release: alpha
@@ -34,6 +34,7 @@ dependencies:
     composer:
       horde/support: ^3
       horde/util: ^3
+      phpunit/phpunit: ^9
   optional:
     composer:
       horde/cli: ^3

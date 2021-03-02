@@ -9,7 +9,6 @@
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
   notes: |+
-    
 3.0.0alpha2:
   api: 3.0.0alpha1
   state:
@@ -19,7 +18,9 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |+
+  notes: |
+    [rla] unbundle old phpunit, add composer dep on phpunit 9.
+    |+
 3.0.0alpha1:
   api: 3.0.0alpha1
   state:

@@ -39,12 +39,12 @@ class Horde_Test_AllTests
      *
      * @return Horde_Test_AllTests  Test object.
      */
-    public static function init($file)
+    public static function init(string $file)
     {
-        $file = dirname($file);
+        $dirAllTests = dirname($file);
 
         $parts = array();
-        foreach (array_reverse(explode(DIRECTORY_SEPARATOR, $file)) as $val) {
+        foreach (array_reverse(explode(DIRECTORY_SEPARATOR, $dirAllTests)) as $val) {
             if ($val == 'test' ||
                 $val == implode('_', array_reverse($parts))) {
                 break;
@@ -54,7 +54,7 @@ class Horde_Test_AllTests
 
         return new self(
             implode('_', array_reverse($parts)),
-            $file
+            $dirAllTests
         );
     }
 
@@ -64,7 +64,7 @@ class Horde_Test_AllTests
      * @param string $package  The name of the package tested by this suite.
      * @param string $dir      The path of the AllTests class.
      */
-    public function __construct($package, $dir)
+    public function __construct(string $package, string $dir)
     {
         $this->_package = $package;
         $this->_dir = $dir;
@@ -128,7 +128,9 @@ class Horde_Test_AllTests
             );
         }
 
-        require_once 'Horde/Test/Bootstrap.php';
+        if (!class_exists(\Horde_Test_Bootstrap::class)) {
+            require_once 'Horde/Test/Bootstrap.php';
+        }
         Horde_Test_Bootstrap::bootstrap($this->_dir);
 
         if (file_exists($this->_dir . '/Autoload.php')) {
