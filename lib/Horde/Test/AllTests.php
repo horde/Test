@@ -82,7 +82,10 @@ class Horde_Test_AllTests
         $old_error = error_reporting();
         $suite = $this->suite();
         $runner = new PHPUnit\TextUI\TestRunner();
-        $result = $runner->run($suite, ['colors' => 'auto'], [] , false);
+        $result = $runner->run($suite, [
+            'colors' => 'auto',
+            'extensions' => []
+        ], [] , false);
         error_reporting($old_error);
         chdir($old_dir);
         return $result;
