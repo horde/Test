@@ -91,7 +91,7 @@ class Horde_Test_AllTests
     /**
      * Collect the unit tests of this directory into a new suite.
      *
-     * @return PHPUnit_Framework_TestSuite The test suite.
+     * @return PHPUnit\Framework\TestSuite The test suite.
      */
     public function suite()
     {
