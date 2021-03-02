@@ -41,10 +41,14 @@ class Horde_Test_Autoload
             return;
         }
 
-        if (file_exists(__DIR__ . '/vendor/autoload.php')) {
-            require __DIR__ . '/vendor/autoload.php';
-        } else {
-            require __DIR__ . '/../../../bundle/vendor/autoload.php';
+        // Find composer autoloader if possible
+        $path = __DIR__;
+        while ($path != '/') {
+            if (file_exists($path . '/vendor/autoload.php')) {
+                require_once $path . '/vendor/autoload.php';
+                break;
+            }
+            $path = dirname($path);
         }
 
         spl_autoload_register(

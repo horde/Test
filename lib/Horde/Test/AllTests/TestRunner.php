@@ -22,7 +22,7 @@
  * @link      http://www.horde.org/components/Horde_Test
  * @package   Test
  */
-class Horde_Test_AllTests_TestRunner extends PHPUnit_Runner_BaseTestRunner
+class Horde_Test_AllTests_TestRunner extends PHPUnit\Runner\BaseTestRunner
 {
     /**
      * Get the test suite.
@@ -34,7 +34,6 @@ class Horde_Test_AllTests_TestRunner extends PHPUnit_Runner_BaseTestRunner
     {
         $suite = $this->getTest(
             $dir,
-            '',
             'Test.php'
         );
         $suite->setName('Horde Framework - ' . $package);
@@ -44,7 +43,7 @@ class Horde_Test_AllTests_TestRunner extends PHPUnit_Runner_BaseTestRunner
 
     /**
      */
-    protected function runFailed($message)
+    protected function runFailed(string $message): void
     {
     }
 
