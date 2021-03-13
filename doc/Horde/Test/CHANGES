@@ -1,15 +1,10 @@
 ------------
-v3.0.0alpha3
-------------
-
-
-
-
-------------
 v3.0.0alpha2
 ------------
 
+[rla] unbundle old phpunit, add composer dep on phpunit 9.
 |+
+
 
 ------------
 v3.0.0alpha1
