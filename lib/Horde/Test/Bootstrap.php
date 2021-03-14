@@ -31,6 +31,26 @@ class Horde_Test_Bootstrap
      */
     public static function bootstrap($dir, $no_autoload = false)
     {
+        /**
+         * Explanation:
+         * If phpunit and Horde_Test is installed outside uut dir
+         * there are scenarios where runonce is already true
+         * but the composer autoloader has not yet run for uut dir
+         *
+         * We can safely move this before the runonce check
+         * as it will not load the same autoload file twice
+         */
+        if (!$no_autoload) {
+            // Find composer autoloader if possible
+            $path = __DIR__;
+            while ($path != '/') {
+                if (file_exists($path . '/vendor/autoload.php')) {
+                    require_once $path . '/vendor/autoload.php';
+                    break;
+                }
+                $path = dirname($path);
+            }
+        }
         if (self::$_runonce) {
             return;
         }
