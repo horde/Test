@@ -1,5 +1,4 @@
 {
-    "minimum-stability": "dev",
     "name": "horde/test",
     "description": "Unit testing library",
     "type": "library",
@@ -17,7 +16,7 @@
             "role": "lead"
         }
     ],
-    "time": "2021-03-14",
+    "time": "2021-08-05",
     "repositories": [
         {
             "type": "composer",
@@ -25,11 +24,11 @@
         }
     ],
     "require": {
-        "php": "^7",
+        "php": "^7 || ^8",
         "horde/support": "^3 || dev-FRAMEWORK_6_0",
-        "horde/util": "^3 || dev-FRAMEWORK_6_0",
-        "phpunit/phpunit": "^9"
+        "horde/util": "^3 || dev-FRAMEWORK_6_0"
     },
+    "require-dev": {},
     "suggest": {
         "horde/cli": "^3 || dev-FRAMEWORK_6_0",
         "horde/log": "^3 || dev-FRAMEWORK_6_0",
@@ -40,5 +39,6 @@
         "psr-0": {
             "Horde_Test": "lib/"
         }
-    }
+    },
+    "autoload-dev": []
 }
