@@ -37,7 +37,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
     {
         $builder = $this->getMockBuilder($className)->disableOriginalConstructor();
         if ($methods) {
-            $builder = $builder->addMethods($methods);
+            $builder = $builder->onlyMethods($methods);
         }
         if ($arguments) {
             $builder = $builder->setConstructorArgs($arguments);
