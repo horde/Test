@@ -49,6 +49,6 @@ dependencies:
       horde/cache: ^3
       horde/argv: ^3
       horde/cli: ^3
-      horde/core : ^3
+      horde/core: ^3
       horde/history: ^3
       horde/mongo: ^2

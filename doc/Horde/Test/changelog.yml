@@ -11,7 +11,6 @@
   notes: |
     [rla] Added stub of a selftest suit.
     [rla] Converted to namespaced code.
-    |+
 3.0.0alpha3:
   api: 3.0.0alpha1
   state:
@@ -33,7 +32,6 @@
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
     [rla] unbundle old phpunit, add composer dep on phpunit 9.
-    |+
 3.0.0alpha1:
   api: 3.0.0alpha1
   state:
