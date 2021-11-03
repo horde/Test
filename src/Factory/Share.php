@@ -13,6 +13,8 @@
 namespace Horde\Test\Factory;
 use Horde\Injector\Injector;
 use Horde\Test\Exception;
+use Horde_Share_Base;
+use Horde_Share_Sqlng;
 /**
  * Generates test database connectors.
  *

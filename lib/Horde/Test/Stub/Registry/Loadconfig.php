@@ -26,7 +26,7 @@ class Horde_Test_Stub_Registry_Loadconfig
     public $conf_files;
     public $vars;
 
-    public function __contruct($app, $conf_file, $vars)
+    public function __construct($app, $conf_file, $vars)
     {
         $this->app = $app;
         $this->conf_file = $conf_file;

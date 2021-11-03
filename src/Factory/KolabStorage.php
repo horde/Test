@@ -12,6 +12,7 @@
  */
 namespace Horde\Test\Factory;
 use Horde_Share_Sqlng;
+use Horde_Share_Base;
 use Horde_Kolab_Storage_Factory;
 use Horde_Support_Stub;
 use Horde\Test\Exception;

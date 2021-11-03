@@ -83,9 +83,9 @@ class Setup
      *            for details.
      * </pre>
      *
-     * @return NULL
+     * @return void
      */
-    public function setup(array $params)
+    public function setup(array $params): void
     {
         if (isset($params['params'])) {
             $this->params = $params['params'];
@@ -95,11 +95,11 @@ class Setup
             if (is_array($setup)) {
                 $factory = $setup['factory'];
                 $method = isset($setup['method']) ? $setup['method'] : 'create';
-                $params = isset($setup['params']) ? $setup['params'] : array();
+                $params = isset($setup['params']) ? $setup['params'] : [];
             } else {
                 $factory = $setup;
                 $method = 'create';
-                $params = array();
+                $params = [];
             }
             if (!empty($this->error)) {
                 break;

@@ -26,7 +26,7 @@ class Loadconfig
     public $confFile;
     public $vars;
 
-    public function __contruct($app, $confFile, $vars)
+    public function __construct($app, $confFile, $vars)
     {
         $this->app = $app;
         $this->confFile = $confFile;

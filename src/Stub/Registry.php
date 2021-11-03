@@ -13,7 +13,6 @@
  */
 namespace Horde\Test\Stub;
 use Horde\Exception\HordeException;
-use Sabre\VObject\Property\Boolean;
 use Horde\Test\Stub\Registry\Loadconfig;
 /**
  * A test replacement for Horde_Registry.
@@ -30,30 +29,30 @@ class Registry
      * A flag that is set once the basic horde application has been
      * minimally configured.
      *
-     * @var boolean
+     * @var bool
      */
-    public $hordeInit = false;
+    public bool $hordeInit = false;
 
     /**
      * The currrent user.
      *
      * @var string
      */
-    protected $user;
+    protected string $user;
 
     /**
      * The current application.
      *
      * @var string
      */
-    protected $app;
+    protected string $app;
 
     /**
      * List of pre-configured configuration objects.
      *
      * @var array
      */
-    protected $configObjects = [];
+    protected array $configObjects = [];
 
     /**
      * Constructor.
@@ -71,11 +70,11 @@ class Registry
      * Converts an authentication username to a unique Horde username.
      *
      * @param string $userId    The username to convert.
-     * @param boolean $toHorde  If true, convert to a Horde username. If
+     * @param bool   $toHorde  If true, convert to a Horde username. If
      *                          false, convert to the auth username.
      *
      * @return string  The converted username.
-     * @throws Horde\Exception\HordeException
+     * @throws HordeException
      */
     public function convertUsername($userId, $toHorde)
     {
@@ -173,7 +172,7 @@ class Registry
      * @param string $app        Application.
      *
      * @return Loadconfig  The config object.
-     * @throws Horde_Exception
+     * @throws HordeException
      */
     public function loadConfigFile($conf_file, $vars = null, $app = null)
     {
