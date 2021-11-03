@@ -30,7 +30,7 @@ class Horde_Test_Log extends Horde_Test_Case
     /**
      * The log handler.
      *
-     * @var Horde_Log_Handler_Base
+     * @var Horde_Log_Handler_Mock
      */
     private $_logHandler;
 

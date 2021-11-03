@@ -33,7 +33,7 @@ class Log extends TestCase
     /**
      * The log handler.
      *
-     * @var Horde_Log_Handler_Base
+     * @var Horde_Log_Handler_Mock
      */
     private $logHandler;
 
