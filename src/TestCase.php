@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Basic Horde test case helper.
  *
@@ -11,8 +12,12 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test;
-use \Horde_Support_Backtrace;
+
+use Horde_Support_Backtrace;
+use ReflectionClass;
+
 /**
  * Basic Horde test case helper.
  *
@@ -47,7 +52,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
         }
         return $builder->getMock();
     }
-    
+
 
     /**
      * Helper method for loading test configuration from a file.
@@ -91,5 +96,56 @@ class TestCase extends \PHPUnit\Framework\TestCase
         }
 
         return null;
+    }
+
+    /**
+     * Create a MockDependencies instance from a class name to simplyfy creation of classes where all or most dependencies are mocked.
+     *
+     * @param string $class  The full name of the class
+     * @param array $overrides  Optional. Hashmap were the keys are the names of the parameters of the class and values are the instance to use.
+     *                               Every parameter not set here, will be automatically mocked instead
+     *
+     * @return MockDependencies  The MockDependencies instance that can be used to create instances of the class
+     *
+     * @throws Exception  If a parameter of the class does not have a type, no default value and is also not in the overrides array
+     * */
+    public function getMockDependencies(string $class, array $overrides = [])
+    {
+        $reflection = new ReflectionClass($class);
+        $constructor = $reflection->getConstructor();
+        $parameters = $constructor->getParameters();
+
+        $dependencies = [];
+        foreach ($parameters as $parameter) {
+            $name = $parameter->getName();
+            $type = $parameter->getType();
+            $override = $overrides[$name] ?? null;
+            if ($override) {
+                $dependency = $override;
+            } elseif ($parameter->isDefaultValueAvailable()) {
+                $dependency = $parameter->getDefaultValue();
+            } else {
+                if (is_null($type)) {
+                    throw new Exception("dependency $name has no type defined and is not in overrides array");
+                }
+                $typeName = $type->getName();
+                switch ($typeName) {
+                    case 'int':
+                        $dependency = 0;
+                        break;
+                    case 'string':
+                        $dependency = '';
+                        break;
+                    case 'array':
+                        $dependency = [];
+                        break;
+                    default:
+                        $dependency = $this->createMock($typeName);
+                        break;
+                }
+            }
+            $dependencies[] = ['name' => $name, 'value' => $dependency];
+        }
+        return new MockDependencies($class, $dependencies);
     }
 }
