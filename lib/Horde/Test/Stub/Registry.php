@@ -21,6 +21,7 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+#[\AllowDynamicProperties]
 class Horde_Test_Stub_Registry
 {
     /**

@@ -27,14 +27,19 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-class Horde_Test_Case extends PHPUnit_Framework_TestCase
+class Horde_Test_Case extends PHPUnit\Framework\TestCase
 {
     /**
      * Useful shorthand if you are mocking a class with a private constructor
      */
     public function getMockSkipConstructor($className, array $methods = array(), array $arguments = array(), $mockClassName = '')
     {
-        return $this->getMock($className, $methods, $arguments, $mockClassName, /* $callOriginalConstructor */ false);
+        return $this->getMockBuilder($className)
+                    ->setMethods($methods)
+                    ->setConstructorArgs($arguments)
+                    ->setMockClassName($mockClassName)
+                    ->disableOriginalConstructor()
+                    ->getMock();
     }
 
     /**
@@ -77,5 +82,50 @@ class Horde_Test_Case extends PHPUnit_Framework_TestCase
         }
 
         return null;
+    }
+
+    /**
+     * getPrivateMethod
+     *
+     * @author  Joe Sexton <joe@webtipblog.com>
+     * @param   string $className
+     * @param   string $methodName
+     * @return  ReflectionMethod
+     */
+    public function getPrivateMethod( $class, $methodName ) {
+        $reflector = new ReflectionClass( get_class($className) );
+        $method = $reflector->getMethod( $methodName );
+        $method->setAccessible( true );
+
+        return $method;
+    }
+
+    /**
+     * getPrivateProperty
+     *
+     * @author  Joe Sexton <joe@webtipblog.com>
+     * @param   object $class
+     * @param   string $propertyName
+     * @return  ReflectionProperty
+     */
+    public function getPrivateProperty( $class, $propertyName ) {
+        $reflector = new ReflectionClass( get_class ($class) );
+        $property = $reflector->getProperty( $propertyName );
+        $property->setAccessible( true );
+
+        return $property;
+    }
+
+    /**
+     * getPrivatePropertyValue
+     *
+     * @author  Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+     * @param   object $class
+     * @param   string $propertyName
+     * @return  object Value of a private property
+     */
+    public function getPrivatePropertyValue( $class, $propertyName ) {
+        $property = $this->getPrivateProperty ( $class, $propertyName );
+        return $property->getValue( $class );
     }
 }

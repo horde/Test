@@ -81,8 +81,8 @@ class Horde_Test_AllTests
         chdir($this->_dir);
         $old_error = error_reporting();
         $suite = $this->suite();
-        $runner = new PHPUnit_TextUI_TestRunner();
-        $result = $runner->doRun($suite, array('colors' => 'auto'), false);
+        $runner = new PHPUnit\TextUI\TestRunner();
+        $result = $runner->doRun($suite, array('colors' => 'auto', 'warnings' => array()), false);
         error_reporting($old_error);
         chdir($old_dir);
         return $result;
@@ -91,7 +91,7 @@ class Horde_Test_AllTests
     /**
      * Collect the unit tests of this directory into a new suite.
      *
-     * @return PHPUnit_Framework_TestSuite The test suite.
+     * @return PHPUnit\Framework\TestSuite The test suite.
      */
     public function suite()
     {

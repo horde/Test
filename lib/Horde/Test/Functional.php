@@ -31,7 +31,7 @@ class Horde_Test_Functional extends Horde_Test_Case
      * Test two XML strings for equivalency (e.g., identical up to reordering of
      * attributes).
      */
-    public function assertDomEquals($expected, $actual, $message = null)
+    public function assertDomEquals($expected, $actual, $message = "")
     {
         $expectedDom = new DOMDocument();
         $expectedDom->loadXML($expected);
@@ -46,7 +46,7 @@ class Horde_Test_Functional extends Horde_Test_Case
      * Test two HTML strings for equivalency (e.g., identical up to reordering
      * of attributes).
      */
-    public function assertHtmlDomEquals($expected, $actual, $message = null)
+    public function assertHtmlDomEquals($expected, $actual, $message = "")
     {
         $expectedDom = new DOMDocument();
         $expectedDom->loadHTML($expected);

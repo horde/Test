@@ -32,14 +32,15 @@ class Horde_Test_Factory_Session
      *
      * @return Horde_Session The mock session.
      */
-    public function create()
+    public function create($params = array())
     {
         if (!class_exists('Horde_Session')) {
             throw new Horde_Test_Exception('The "Horde_Session" class is unavailable!');
         }
-        $session = new Horde_Session();
+        $session = new Horde_Session($params);
         $session->sessionHandler = new Horde_SessionHandler(
-            new Horde_SessionHandler_Storage_Builtin()
+            new Horde_SessionHandler_Storage_Builtin(),
+            $params
         );
         return $session;
     }
