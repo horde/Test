@@ -1,8 +1,20 @@
 <?php
 /**
+ * Basic Horde test case helper.
+ *
+ * PHP version 7
+ *
+ * @category Horde
+ * @package  Test
+ * @author   Michael Slusarz <slusarz@horde.org>
+ * @license  http://www.horde.org/licenses/lgpl21 LGPL
+ * @link     http://www.horde.org/components/Horde_Test
+ */
+namespace Horde\Test;
+/**
  * Bootstrap code for PHPUnit tests.
  *
- * Copyright 2012-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2012-2021 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -13,14 +25,14 @@
  * @link     http://www.horde.org/components/Horde_Test
  * @package  Test
  */
-class Horde_Test_Bootstrap
+class Bootstrap
 {
     /**
      * Only run bootstrap code once.
      *
      * @var boolean
      */
-    private static $_runonce = false;
+    private static bool $runonce = false;
 
     /**
      * Bootstrap code for Horde packages.
@@ -51,7 +63,7 @@ class Horde_Test_Bootstrap
                 $path = dirname($path);
             }
         }
-        if (self::$_runonce) {
+        if (self::$runonce) {
             return;
         }
 
@@ -70,17 +82,17 @@ class Horde_Test_Bootstrap
                     $base . PATH_SEPARATOR . $base . '/../lib' . PATH_SEPARATOR . get_include_path()
                 );
             }
-            if (!class_exists(\Horde_Test_Autoload::class)) {
+            if (!class_exists(Autoload::class)) {
                 require_once 'Horde/Test/Autoload.php';
             }
-            Horde_Test_Autoload::init();
+            Autoload::init();
         }
 
         if (file_exists($dir . '/Autoload.php')) {
             require_once $dir . '/Autoload.php';
         }
 
-        self::$_runonce = true;
+        self::$runonce = true;
     }
 
 }

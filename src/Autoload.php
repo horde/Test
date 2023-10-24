@@ -1,10 +1,11 @@
 <?php
+namespace Horde\Test;
 /**
  * Reduced Horde Autoloader for test suites.
  *
- * PHP version 5
+ * PHP version 7
  *
- * Copyright 2009-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2009-2021 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -16,28 +17,28 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-class Horde_Test_Autoload
+class Autoload
 {
     /**
      * Prefix mappings.
      *
      * @var array
      */
-    private static $_mappings = array();
+    private static $mappings = [];
 
     /**
      * Only run init code once.
      *
      * @var boolean
      */
-    private static $_runonce = false;
+    private static $runonce = false;
 
     /**
      * Base autoloader code for Horde PEAR packages.
      */
     public static function init()
     {
-        if (self::$_runonce) {
+        if (self::$runonce) {
             return;
         }
 
@@ -53,7 +54,7 @@ class Horde_Test_Autoload
 
         spl_autoload_register(
             function($class) {
-                $filename = Horde_Test_Autoload::resolve($class);
+                $filename = Autoload::resolve($class);
                 $err_mask = error_reporting() & ~E_WARNING;
                 $old_err = error_reporting($err_mask);
                 include "$filename.php";
@@ -63,7 +64,7 @@ class Horde_Test_Autoload
             true
         );
 
-        self::$_runonce = true;
+        self::$runonce = true;
     }
 
     /**
@@ -74,7 +75,7 @@ class Horde_Test_Autoload
      */
     public static function addPrefix($prefix, $path)
     {
-        self::$_mappings[$prefix] = $path;
+        self::$mappings[$prefix] = $path;
     }
 
     /**
@@ -88,7 +89,7 @@ class Horde_Test_Autoload
     {
         $filename = str_replace(array('::', '_', '\\'), '/', $class);
 
-        foreach (self::$_mappings as $prefix => $path) {
+        foreach (self::$mappings as $prefix => $path) {
             if ((strpos($filename, "/") === false) && ($filename == $prefix)) {
                 $filename = $path . '/' . $filename;
             }

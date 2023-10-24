@@ -1,47 +1,62 @@
 {
+    "minimum-stability": "dev",
     "name": "horde/test",
     "description": "Unit testing library",
     "type": "library",
     "homepage": "https://www.horde.org/libraries/Horde_Test",
-    "license": "LGPL-2.1",
+    "license": "LGPL-2.1-only",
     "authors": [
-        {
-            "name": "Chuck Hagenbuch",
-            "email": "chuck@horde.org",
-            "role": "lead"
-        },
         {
             "name": "Jan Schneider",
             "email": "jan@horde.org",
             "role": "lead"
+        },
+        {
+            "name": "Chuck Hagenbuch",
+            "email": "chuck@horde.org",
+            "role": "lead"
         }
     ],
-    "version": "2.6.5",
-    "time": "2020-03-15",
+    "time": "2021-11-03",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com/"
         }
     ],
     "require": {
-        "php": "^5.3.3 || ^7",
-        "pear-pear.horde.org/Horde_Support": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2"
+        "php": "^7.4 || ^8",
+        "horde/support": "^3 || dev-FRAMEWORK_6_0",
+        "horde/util": "^3 || dev-FRAMEWORK_6_0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "horde/injector": "^3 || dev-FRAMEWORK_6_0",
+        "horde/log": "^3 || dev-FRAMEWORK_6_0",
+        "horde/cache": "^3 || dev-FRAMEWORK_6_0",
+        "horde/argv": "^3 || dev-FRAMEWORK_6_0",
+        "horde/cli": "^3 || dev-FRAMEWORK_6_0",
+        "horde/core": "^3 || dev-FRAMEWORK_6_0",
+        "horde/history": "^3 || dev-FRAMEWORK_6_0",
+        "horde/mongo": "^2 || dev-FRAMEWORK_6_0"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Cli": "^2",
-        "pear-pear.horde.org/Horde_Log": "^2",
+        "horde/cli": "^3 || dev-FRAMEWORK_6_0",
+        "horde/log": "^3 || dev-FRAMEWORK_6_0",
         "ext-dom": "*",
         "ext-json": "*"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Test": "2.*",
-        "pear-horde/Horde_Test": "2.*"
     },
     "autoload": {
         "psr-0": {
             "Horde_Test": "lib/"
+        },
+        "psr-4": {
+            "Horde\\Test\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Horde\\Test\\Test\\": "test/"
         }
     }
 }

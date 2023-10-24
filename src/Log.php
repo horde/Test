@@ -2,7 +2,7 @@
 /**
  * Provides utilities to test for log output.
  *
- * PHP version 5
+ * PHP version 7
  *
  * @category Horde
  * @package  Test
@@ -10,11 +10,14 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-
+namespace Horde\Test;
+use Horde_Log_Handler_Base;
+use Horde_Log_Handler_Mock;
+use Horde_Log_Logger;
 /**
  * Provides utilities to test for log output.
  *
- * Copyright 2011-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2021 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -25,14 +28,14 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-class Horde_Test_Log extends Horde_Test_Case
+class Log extends TestCase
 {
     /**
      * The log handler.
      *
      * @var Horde_Log_Handler_Mock
      */
-    private $_logHandler;
+    private $logHandler;
 
     /**
      * Returns a log handler.
@@ -44,8 +47,8 @@ class Horde_Test_Log extends Horde_Test_Case
         if (!class_exists('Horde_Log_Logger')) {
             $this->markTestSkipped('The "Horde_Log" package is missing!');
         }
-        $this->_logHandler = new Horde_Log_Handler_Mock();
-        return new Horde_Log_Logger($this->_logHandler);
+        $this->logHandler = new Horde_Log_Handler_Mock();
+        return new Horde_Log_Logger($this->logHandler);
     }
 
     /**
@@ -56,12 +59,10 @@ class Horde_Test_Log extends Horde_Test_Case
      * will later be used to analyze the log events.
      *
      * @param int $count The expected number of messages.
-     *
-     * @return Horde_Log_Logger
      */
-    public function assertLogCount($count)
+    public function assertLogCount(int $count)
     {
-        $this->assertEquals(count($this->_logHandler->events), $count);
+        $this->assertEquals(count($this->logHandler->events), $count);
     }
 
     /**
@@ -73,13 +74,12 @@ class Horde_Test_Log extends Horde_Test_Case
      *
      * @param string $message The expected log message.
      *
-     * @return Horde_Log_Logger
      */
     public function assertLogContains($message)
     {
-        $messages = array();
+        $messages = [];
         $found = false;
-        foreach ($this->_logHandler->events as $event) {
+        foreach ($this->logHandler->events as $event) {
             if (strstr($event['message'], $message) !== false) {
                 $found = true;
                 break;
@@ -98,20 +98,19 @@ class Horde_Test_Log extends Horde_Test_Case
      *
      * @param string $regular_expression The expected regular expression.
      *
-     * @return Horde_Log_Logger
      */
     public function assertLogRegExp($regular_expression)
     {
-        $messages = array();
+        $messages = [];
         $found = false;
-        foreach ($this->_logHandler->events as $event) {
+        foreach ($this->logHandler->events as $event) {
             if (preg_match($regular_expression, $event['message'], $matches) !== false) {
                 $found = true;
                 break;
             }
             $messages[] = $event['message'];
         }
-        $this->assertTrue($found, sprintf("Did not find \"%s\" in [\n%s\n]", $message, join("\n", $messages)));
+        $this->assertTrue($found, sprintf("Did not find \"%s\" in [\n%s\n]", $$regular_expression, join("\n", $messages)));
     }
 
     /**
@@ -121,7 +120,7 @@ class Horde_Test_Log extends Horde_Test_Case
      */
     public function getLogOutput()
     {
-        return $this->_logHandler->events;
+        return $this->logHandler->events;
     }
 
 }

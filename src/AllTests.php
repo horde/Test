@@ -2,7 +2,7 @@
 /**
  * Horde base test suite
  *
- * PHP version 5
+ * PHP version 7
  *
  * @category Horde
  * @package  Test
@@ -11,11 +11,12 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-
+namespace Horde\Test;
+use Horde\Test\AllTests\TestRunner;
 /**
  * Horde base test suite
  *
- * Copyright 2009-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2009-2021 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -27,23 +28,23 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-class Horde_Test_AllTests
+class AllTests
 {
-    private $_dir;
-    private $_package;
+    private $dir;
+    private $package;
 
     /**
-     * Create a Horde_Test_AllTests object.
+     * Create a Horde\Test\AllTests object.
      *
      * @param string $file  Filename of the AllTests.php script.
      *
-     * @return Horde_Test_AllTests  Test object.
+     * @return AllTests  Test object.
      */
     public static function init(string $file)
     {
         $dirAllTests = dirname($file);
 
-        $parts = array();
+        $parts = [];
         foreach (array_reverse(explode(DIRECTORY_SEPARATOR, $dirAllTests)) as $val) {
             if ($val == 'test' ||
                 $val == implode('_', array_reverse($parts))) {
@@ -66,8 +67,8 @@ class Horde_Test_AllTests
      */
     public function __construct(string $package, string $dir)
     {
-        $this->_package = $package;
-        $this->_dir = $dir;
+        $this->package = $package;
+        $this->dir = $dir;
     }
 
     /**
@@ -78,10 +79,10 @@ class Horde_Test_AllTests
     public function run()
     {
         $old_dir = getcwd();
-        chdir($this->_dir);
+        chdir($this->dir);
         $old_error = error_reporting();
         $suite = $this->suite();
-        $runner = new PHPUnit\TextUI\TestRunner();
+        $runner = new \PHPUnit\TextUI\TestRunner();
         $result = $runner->run($suite, [
             'colors' => 'auto',
             'extensions' => []
@@ -94,14 +95,14 @@ class Horde_Test_AllTests
     /**
      * Collect the unit tests of this directory into a new suite.
      *
-     * @return PHPUnit\Framework\TestSuite The test suite.
+     * @return \PHPUnit\Framework\TestSuite The test suite.
      */
     public function suite()
     {
         $this->setup();
 
-        $runner = new Horde_Test_AllTests_TestRunner();
-        return $runner->getSuite($this->_package, $this->_dir);
+        $runner = new TestRunner();
+        return $runner->getSuite($this->package, $this->dir);
     }
 
     /**
@@ -121,7 +122,7 @@ class Horde_Test_AllTests
     public function setup()
     {
         // Detect component root and add "lib" and "test" to the include path.
-        $base = $this->_dir;
+        $base = $this->dir;
         while ($base != '/' && basename($base) != 'test') {
             $base = dirname($base);
         }
@@ -131,13 +132,13 @@ class Horde_Test_AllTests
             );
         }
 
-        if (!class_exists(\Horde_Test_Bootstrap::class)) {
+        if (!class_exists(Bootstrap::class)) {
             require_once 'Horde/Test/Bootstrap.php';
         }
-        Horde_Test_Bootstrap::bootstrap($this->_dir);
+        Bootstrap::bootstrap($this->dir);
 
-        if (file_exists($this->_dir . '/Autoload.php')) {
-            require_once $this->_dir . '/Autoload.php';
+        if (file_exists($this->dir . '/Autoload.php')) {
+            require_once $this->dir . '/Autoload.php';
         }
     }
 

@@ -1,28 +1,29 @@
 <?php
 /**
- * Copyright 2014-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2014-2021 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
  *
  * @category  Horde
- * @copyright 2014-2017 Horde LLC
+ * @copyright 2014-2021 Horde LLC
  * @license   http://www.horde.org/licenses/lgpl21 LGPL
  * @link      http://www.horde.org/components/Horde_Test
  * @package   Test
  */
-
+namespace Horde\Test\AllTests;
+use PHPUnit\Runner\BaseTestRunner;
 /**
  * TestRunner for Horde AllTests.php scripts.
  *
  * @author    Michael Slusarz <slusarz@horde.org>
  * @category  Horde
- * @copyright 2014-2017 Horde LLC
+ * @copyright 2014-2021 Horde LLC
  * @license   http://www.horde.org/licenses/lgpl21 LGPL
  * @link      http://www.horde.org/components/Horde_Test
  * @package   Test
  */
-class Horde_Test_AllTests_TestRunner extends PHPUnit\Runner\BaseTestRunner
+class TestRunner extends BaseTestRunner
 {
     /**
      * Get the test suite.

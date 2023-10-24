@@ -2,7 +2,7 @@
 /**
  * Horde test case helper.
  *
- * PHP version 5
+ * PHP version 7
  *
  * @category Horde
  * @package  Test
@@ -10,11 +10,12 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-
+namespace Horde\Test;
+use DOMDocument;
 /**
  * Horde test case helper.
  *
- * Copyright 2009-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2009-2021 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -25,7 +26,7 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-class Horde_Test_Functional extends Horde_Test_Case
+class FunctionalTest extends TestCase
 {
     /**
      * Test two XML strings for equivalency (e.g., identical up to reordering of

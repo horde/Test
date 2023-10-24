@@ -1,9 +1,48 @@
-------
-v2.6.5
-------
+------------
+v3.0.0alpha7
+------------
 
 
 
+
+------------
+v3.0.0alpha6
+------------
+
+|+
+
+------------
+v3.0.0alpha5
+------------
+
+|+
+
+------------
+v3.0.0alpha4
+------------
+
+[rla] Added stub of a selftest suit.
+[rla] Converted to namespaced code.
+
+
+------------
+v3.0.0alpha3
+------------
+
+|+
+
+------------
+v3.0.0alpha2
+------------
+
+[rla] unbundle old phpunit, add composer dep on phpunit 9.
+
+
+------------
+v3.0.0alpha1
+------------
+
+|+
 
 ------
 v2.6.4

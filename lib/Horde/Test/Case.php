@@ -27,7 +27,7 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-class Horde_Test_Case extends PHPUnit_Framework_TestCase
+class Horde_Test_Case extends PHPUnit\Framework\TestCase
 {
     /**
      * Useful shorthand if you are mocking a class with a private constructor
