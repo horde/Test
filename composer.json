@@ -18,26 +18,14 @@
     ],
     "version": "2.6.5",
     "time": "2020-03-15",
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
-    ],
     "require": {
-        "php": "^5.3.3 || ^7",
-        "pear-pear.horde.org/Horde_Support": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2"
+        "php": "^5.3.3 || ^7"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Cli": "^2",
-        "pear-pear.horde.org/Horde_Log": "^2",
         "ext-dom": "*",
         "ext-json": "*"
     },
     "replace": {
-        "pear-pear.horde.org/Horde_Test": "2.*",
-        "pear-horde/Horde_Test": "2.*"
     },
     "autoload": {
         "psr-0": {
