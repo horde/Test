@@ -7,13 +7,9 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches:
-      - master
-      - main
       - FRAMEWORK_6_0
   pull_request:
     branches:
-      - master
-      - main
       - FRAMEWORK_6_0
 
 
@@ -27,8 +23,8 @@ jobs:
     strategy:
       matrix:
         operating-system: ['ubuntu-20.04']
-        php-versions: ['7.4', '8.0', 'latest']
-        phpunit-versions: ['latest', '9.5']
+        php-versions: ['7.4', '8.0', '8.1', '8.2', 'latest']
+        phpunit-versions: ['latest', '10.5']
     steps:
     - name: Setup github ssh key
       run:  mkdir -p ~/.ssh/ && ssh-keyscan -t rsa github.com > ~/.ssh/known_hosts
