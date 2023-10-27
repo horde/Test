@@ -17,6 +17,7 @@ namespace Horde\Test;
 
 use Horde_Support_Backtrace;
 use ReflectionClass;
+use ReflectionNamedType;
 
 /**
  * Basic Horde test case helper.
@@ -127,7 +128,10 @@ class TestCase extends \PHPUnit\Framework\TestCase
             } else {
                 if (is_null($type)) {
                     throw new Exception("dependency $name has no type defined and is not in overrides array");
+                } elseif (!($type instanceof ReflectionNamedType)) {
+                    throw new Exception("dependency $name is a union or intersection type");
                 }
+                // TODO: How would we handle a union or intersection dependency?
                 $typeName = $type->getName();
                 switch ($typeName) {
                     case 'int':
