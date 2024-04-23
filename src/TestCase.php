@@ -16,6 +16,7 @@
 namespace Horde\Test;
 
 use Horde_Support_Backtrace;
+use PHPUnit\Framework\MockObject\MockObject;
 use ReflectionClass;
 use ReflectionNamedType;
 
@@ -151,5 +152,50 @@ class TestCase extends \PHPUnit\Framework\TestCase
             $dependencies[] = ['name' => $name, 'value' => $dependency];
         }
         return new MockDependencies($class, $dependencies);
+    }
+
+    /**
+     * Use this to expect a mock object method to be called multiple times with potentially different arguments and return values
+     * The number of expected invocations is based on the count of $argsArrays
+     * Phpunits "at" as well as "withConsecutive" are deprecated, so this is a helper to get around that for this usecase
+     * 
+     * @param MockObject $mockObject      The mock object
+     * @param string $method              The method to you expect to be called multiple times
+     * @param array<array> $argsArrays  The array of expected arguments, the method should be called with
+     *                                    The array index+1 matches the invocation number of the method
+     * @param array $returnValues         The array of return values of the mocked method
+     *                                    The array index+1 matches the invocation number of the method
+     *                                    Some or all indices can be left empty, if nothing should be returned
+     * @param bool $exact                 If true, matches args with "assertSame", otherwise with "assertEquals"
+     */
+    public function matchConsecutiveInvocations(
+        MockObject $mockObject,
+        string $method, 
+        array $argsArrays,
+        array $returnValues = [],
+        bool $exact = true
+    ): void {   
+        $assertionMethod = $exact ? 'assertSame' : 'assertEquals';
+        $invocations = count($argsArrays);
+        $matcher = $this->exactly($invocations);
+        $mockObject->expects($matcher)->method($method)->willReturnCallback(function() use ($argsArrays, $returnValues, $matcher, $assertionMethod) {
+            if (method_exists($matcher, 'numberOfInvocations')) {
+                $invocation = $matcher->numberOfInvocations();
+            } else {
+                $invocation = $matcher->getInvocationCount();
+            }
+            $idx = $invocation - 1;
+            $args = func_get_args();
+            $expectedArgs = $argsArrays[$idx];
+            $expectedArgCount = count($expectedArgs);
+            self::assertSame($expectedArgCount, count($args));
+            foreach($expectedArgs as $pos => $expectedArg) {
+                self::$assertionMethod($expectedArg, $args[$pos]);
+            }
+
+            if (array_key_exists($idx, $returnValues)){
+                return $returnValues[$idx];
+            }
+        });
     }
 }
