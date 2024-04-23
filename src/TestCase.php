@@ -180,7 +180,11 @@ class TestCase extends \PHPUnit\Framework\TestCase
         $invocations = count($argsArrays);
         $matcher = $this->exactly($invocations);
         $mockObject->expects($matcher)->method($method)->willReturnCallback(function() use ($argsArrays, $returnValues, $matcher, $assertionMethod) {
-            $invocation = $matcher->getInvocationCount();
+            if (method_exists($matcher, 'numberOfInvocations')) {
+                $invocation = $matcher->numberOfInvocations();
+            } else {
+                $invocation = $matcher->getInvocationCount();
+            }
             $idx = $invocation - 1;
             $args = func_get_args();
             $expectedArgs = $argsArrays[$idx];
