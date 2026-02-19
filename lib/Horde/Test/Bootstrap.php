@@ -40,6 +40,7 @@ class Horde_Test_Bootstrap
          * We can safely move this before the runonce check
          * as it will not load the same autoload file twice
          */
+
         if (!$no_autoload) {
             // Find composer autoloader if possible
             $path = __DIR__;
@@ -64,12 +65,15 @@ class Horde_Test_Bootstrap
             while ($base != '/' && basename($base) != 'Horde') {
                 $base = dirname($base);
             }
-            $base = dirname($base);
-            if ($base) {
-                set_include_path(
-                    $base . PATH_SEPARATOR . $base . '/../lib' . PATH_SEPARATOR . get_include_path()
-                );
+            if ($base && $base != '/') {
+                $include = dirname($base);
+                $include2 = dirname($include) . '/lib';
+                if ($include != $include2) {
+                    $include .= PATH_SEPARATOR . $include2;
+                }
+                set_include_path($include . PATH_SEPARATOR . get_include_path());
             }
+
             if (!class_exists(\Horde_Test_Autoload::class)) {
                 require_once 'Horde/Test/Autoload.php';
             }
