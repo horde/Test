@@ -50,7 +50,7 @@ class Horde_Test_Stub_Registry
      *
      * @var array
      */
-    protected $_configObjects = array();
+    protected $configObjects = [];
 
     /**
      * Constructor.
