@@ -23,8 +23,9 @@
 class Horde_Test_Stub_Registry_Loadconfig
 {
     public $app;
-    public $conf_files;
+    public $conf_file;
     public $vars;
+    public $config = [];
 
     public function __construct($app, $conf_file, $vars)
     {
