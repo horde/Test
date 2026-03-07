@@ -20,7 +20,7 @@ authors:
     active: false
     role: lead
 version:
-  release: 3.0.0alpha7
+  release: 3.0.0-alpha8
   api: 3.0.0alpha1
 state:
   release: alpha
@@ -52,3 +52,4 @@ dependencies:
       horde/core: ^3
       horde/history: ^3
       horde/mongo: ^2
+vendor: horde
