@@ -51,18 +51,6 @@ class Horde_Test_Autoload
             $path = dirname($path);
         }
 
-        spl_autoload_register(
-            function($class) {
-                $filename = Horde_Test_Autoload::resolve($class);
-                $path = stream_resolve_include_path($filename);
-                if ($path) {
-                    include $path;
-                }
-            },
-            true,
-            true
-        );
-
         self::$_runonce = true;
     }
 
