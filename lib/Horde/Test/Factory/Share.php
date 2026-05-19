@@ -1,4 +1,5 @@
 <?php
+use Horde\Injector\Injector;
 /**
  * Generates test database connectors.
  *
@@ -30,16 +31,16 @@ class Horde_Test_Factory_Share
     /**
      * The injector.
      *
-     * @var Horde_Injector
+     * @var Horde_Injector|Injector
      */
     private $_injector;
 
     /**
      * Constructor.
      *
-     * @param Horde_Injector $injector The injector.
+     * @param Horde_Injector|Injector $injector The injector.
      */
-    public function __construct(Horde_Injector $injector)
+    public function __construct(Horde_Injector|Injector $injector)
     {
         $this->_injector = $injector;
     }
