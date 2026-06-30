@@ -1,11 +1,13 @@
 <?php
+
 namespace Horde\Test;
+
 /**
  * Reduced Horde Autoloader for test suites.
  *
  * PHP version 7
  *
- * Copyright 2009-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2009-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -53,7 +55,7 @@ class Autoload
         }
 
         spl_autoload_register(
-            function($class) {
+            function ($class) {
                 $filename = Autoload::resolve($class);
                 $err_mask = error_reporting() & ~E_WARNING;
                 $old_err = error_reporting($err_mask);
@@ -87,7 +89,7 @@ class Autoload
      */
     public static function resolve($class)
     {
-        $filename = str_replace(array('::', '_', '\\'), '/', $class);
+        $filename = str_replace(['::', '_', '\\'], '/', $class);
 
         foreach (self::$mappings as $prefix => $path) {
             if ((strpos($filename, "/") === false) && ($filename == $prefix)) {

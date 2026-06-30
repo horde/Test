@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Horde base test suite
  *
@@ -11,12 +12,15 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test;
+
 use Horde\Test\AllTests\TestRunner;
+
 /**
  * Horde base test suite
  *
- * Copyright 2009-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2009-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -46,8 +50,8 @@ class AllTests
 
         $parts = [];
         foreach (array_reverse(explode(DIRECTORY_SEPARATOR, $dirAllTests)) as $val) {
-            if ($val == 'test' ||
-                $val == implode('_', array_reverse($parts))) {
+            if ($val == 'test'
+                || $val == implode('_', array_reverse($parts))) {
                 break;
             }
             $parts[] = $val;
@@ -85,8 +89,8 @@ class AllTests
         $runner = new \PHPUnit\TextUI\TestRunner();
         $result = $runner->run($suite, [
             'colors' => 'auto',
-            'extensions' => []
-        ], [] , false);
+            'extensions' => [],
+        ], [], false);
         error_reporting($old_error);
         chdir($old_dir);
         return $result;

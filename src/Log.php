@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Provides utilities to test for log output.
  *
@@ -10,14 +11,17 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test;
+
 use Horde_Log_Handler_Base;
 use Horde_Log_Handler_Mock;
 use Horde_Log_Logger;
+
 /**
  * Provides utilities to test for log output.
  *
- * Copyright 2011-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -27,6 +31,7 @@ use Horde_Log_Logger;
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
+ * @coversNothing
  */
 class Log extends TestCase
 {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * A test helper replacing real factories.
  *
@@ -10,7 +11,9 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test\Stub;
+
 /**
  * A test helper replacing real factories.
  *
@@ -20,7 +23,7 @@ namespace Horde\Test\Stub;
  * to be used as a prepared stub that can be provided to the injector and will
  * return the instance required for testing.
  *
- * Copyright 2011-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.

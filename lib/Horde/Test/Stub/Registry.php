@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2011-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -114,7 +115,7 @@ class Horde_Test_Stub_Registry
      *
      * @return boolean  Whether or not this is an admin user.
      */
-    public function isAdmin(array $options = array())
+    public function isAdmin(array $options = [])
     {
         return false;
     }
@@ -132,11 +133,11 @@ class Horde_Test_Stub_Registry
      */
     public function remoteHost()
     {
-        return (object)array(
+        return (object) [
             'addr' => '1.2.3.4',
             'host' => 'example.com',
-            'proxy' => false
-        );
+            'proxy' => false,
+        ];
     }
 
     /**
@@ -153,10 +154,12 @@ class Horde_Test_Stub_Registry
      * @param string $app        Application.
      */
     public function setConfigFile(
-        $loadconfig, $conf_file, $vars = null, $app = null
-    )
-    {
-        $sig = serialize(array($conf_file, $vars, $app));
+        $loadconfig,
+        $conf_file,
+        $vars = null,
+        $app = null
+    ) {
+        $sig = serialize([$conf_file, $vars, $app]);
         $this->configObjects[$sig] = $loadconfig;
     }
 
@@ -178,15 +181,15 @@ class Horde_Test_Stub_Registry
             throw new Horde_Exception('Failed to import configuration file "hooks.php".');
         }
 
-        $sig = serialize(array($conf_file, $vars, $app));
+        $sig = serialize([$conf_file, $vars, $app]);
         if (isset($this->configObjects[$sig])) {
             return $this->configObjects[$sig];
         }
 
         return new Horde_Test_Stub_Registry_Loadconfig(
-                $app,
-                $conf_file,
-                $vars
+            $app,
+            $conf_file,
+            $vars
         );
     }
 
@@ -238,6 +241,6 @@ class Horde_Test_Stub_Registry
      */
     public function listAPIs()
     {
-        return array();
+        return [];
     }
 }

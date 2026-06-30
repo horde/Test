@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Basic Horde test case helper.
  *
@@ -15,7 +16,7 @@
 /**
  * Basic Horde test case helper.
  *
- * Copyright 2009-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2009-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -26,13 +27,14 @@
  * @author   Jan Schneider <jan@horde.org>
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
+ * @coversNothing
  */
 class Horde_Test_Case extends PHPUnit\Framework\TestCase
 {
     /**
      * Useful shorthand if you are mocking a class with a private constructor
      */
-    public function getMockSkipConstructor($className, array $methods = array(), array $arguments = array(), $mockClassName = '')
+    public function getMockSkipConstructor($className, array $methods = [], array $arguments = [], $mockClassName = '')
     {
         return $this->getMock($className, $methods, $arguments, $mockClassName, /* $callOriginalConstructor */ false);
     }
@@ -54,7 +56,7 @@ class Horde_Test_Case extends PHPUnit\Framework\TestCase
      * @return mixed  The value of the configuration file's $conf variable, or
      *                null.
      */
-    public static function getConfig($env, $path = null, $default = array())
+    public static function getConfig($env, $path = null, $default = [])
     {
         $config = getenv($env);
         if ($config) {

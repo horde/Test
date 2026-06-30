@@ -1,10 +1,11 @@
 <?php
+
 /**
  * Reduced Horde Autoloader for test suites.
  *
  * PHP version 5
  *
- * Copyright 2009-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2009-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -23,7 +24,7 @@ class Horde_Test_Autoload
      *
      * @var array
      */
-    private static $_mappings = array();
+    private static $_mappings = [];
 
     /**
      * Only run init code once.
@@ -74,7 +75,7 @@ class Horde_Test_Autoload
      */
     public static function resolve($class)
     {
-        $filename = str_replace(array('::', '_', '\\'), '/', $class);
+        $filename = str_replace(['::', '_', '\\'], '/', $class);
 
         foreach (self::$_mappings as $prefix => $path) {
             if ((strpos($filename, "/") === false) && ($filename == $prefix)) {

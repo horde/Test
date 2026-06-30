@@ -1,15 +1,19 @@
 <?php
+
 namespace Horde\Test\Test;
-use \PHPUnit\Framework\TestCase;
-use \Horde\Test\Exception;
-use \Horde\Exception\Wrapped as WrappedException;
-use \Horde\Exception\HordeException;
+
+use PHPUnit\Framework\TestCase;
+use Horde\Test\Exception;
+use Horde\Exception\Wrapped as WrappedException;
+use Horde\Exception\HordeException;
+
 /**
  * @author     Ralf Lang <ralf.lang@ralf-lang.de>
  * @license    http://www.horde.org/licenses/lgpl LGPL
  * @category   Horde
  * @package    Otp
  * @subpackage UnitTests
+ * @coversNothing
  */
 class ExceptionTest extends TestCase
 {

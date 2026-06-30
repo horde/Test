@@ -1,4 +1,5 @@
 <?php
+
 /**
  * A test helper for generating complex test setups.
  *
@@ -10,13 +11,16 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test;
+
 use Horde\Injector\Injector;
 use Horde\Injector\TopLevel;
+
 /**
  * A test helper for generating complex test setups.
  *
- * Copyright 2011-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -94,8 +98,8 @@ class Setup
         foreach ($params as $interface => $setup) {
             if (is_array($setup)) {
                 $factory = $setup['factory'];
-                $method = isset($setup['method']) ? $setup['method'] : 'create';
-                $params = isset($setup['params']) ? $setup['params'] : [];
+                $method = $setup['method'] ?? 'create';
+                $params = $setup['params'] ?? [];
             } else {
                 $factory = $setup;
                 $method = 'create';
@@ -125,9 +129,9 @@ class Setup
         if (!empty($this->error)) {
             return;
         }
-        if (!class_exists('Horde_Test_Factory_' . $factory) &&
-            !class_exists('Horde\Test\Factory\\' . $factory) &&
-            !class_exists($factory)) {
+        if (!class_exists('Horde_Test_Factory_' . $factory)
+            && !class_exists('Horde\Test\Factory\\' . $factory)
+            && !class_exists($factory)) {
             $this->error = "Neither the class \"Horde_Test_Factory_$factory\" nor \"$factory\" exist. \"$interface\" cannot be created!";
             return;
         }
@@ -136,8 +140,8 @@ class Setup
         } else {
             $f = $this->injector->getInstance($factory);
         }
-        if (!method_exists($f, $method) &&
-            !method_exists($f, 'create' . $method)) {
+        if (!method_exists($f, $method)
+            && !method_exists($f, 'create' . $method)) {
             $this->error = "The factory lacks the specified method \"$method\"!";
             return;
         }
@@ -176,7 +180,7 @@ class Setup
      */
     public function getError(): string
     {
-        return (string)$this->error;
+        return (string) $this->error;
     }
 
     /**

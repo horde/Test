@@ -1,4 +1,5 @@
 <?php
+
 /**
  * A test helper for testing Horde_Cli based classes.
  *
@@ -14,7 +15,7 @@
 /**
  * A test helper for testing Horde_Cli based classes.
  *
- * Copyright 2010-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2010-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -49,7 +50,7 @@ class Horde_Test_Stub_Cli extends Horde_Cli
         $this->writeln($this->red('Fatal Error:'));
         $this->writeln($this->red($error));
         $this->writeln();
-        $this->writeln((string)$backtrace);
+        $this->writeln((string) $backtrace);
         $this->writeln($this->red('===================='));
     }
 }

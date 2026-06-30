@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Horde base test suite
  *
@@ -15,7 +16,7 @@
 /**
  * Horde base test suite
  *
- * Copyright 2009-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2009-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -43,10 +44,10 @@ class Horde_Test_AllTests
     {
         $dirAllTests = dirname($file);
 
-        $parts = array();
+        $parts = [];
         foreach (array_reverse(explode(DIRECTORY_SEPARATOR, $dirAllTests)) as $val) {
-            if ($val == 'test' ||
-                $val == implode('_', array_reverse($parts))) {
+            if ($val == 'test'
+                || $val == implode('_', array_reverse($parts))) {
                 break;
             }
             $parts[] = $val;
@@ -84,8 +85,8 @@ class Horde_Test_AllTests
         $runner = new PHPUnit\TextUI\TestRunner();
         $result = $runner->run($suite, [
             'colors' => 'auto',
-            'extensions' => []
-        ], [] , false);
+            'extensions' => [],
+        ], [], false);
         error_reporting($old_error);
         chdir($old_dir);
         return $result;
@@ -131,7 +132,7 @@ class Horde_Test_AllTests
             );
         }
 
-        if (!class_exists(\Horde_Test_Bootstrap::class)) {
+        if (!class_exists(Horde_Test_Bootstrap::class)) {
             require_once 'Horde/Test/Bootstrap.php';
         }
         Horde_Test_Bootstrap::bootstrap($this->_dir);

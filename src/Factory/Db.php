@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Generates test database connectors.
  *
@@ -10,15 +11,18 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test\Factory;
+
 use Horde\Test\Exception;
 use Horde_Db_Adapter_Pdo_Sqlite;
 use PDO;
 use Horde_Db_Migration_Migrator;
+
 /**
  * Generates test database connectors.
  *
- * Copyright 2011-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -44,25 +48,27 @@ class Db
      *
      * @return Horde_Db_Adapter_Pdo_Sqlite The DB adapter.
      */
-    public function create($params = array())
+    public function create($params = [])
     {
-        if (!extension_loaded('pdo') ||
-            !in_array('sqlite', PDO::getAvailableDrivers())) {
+        if (!extension_loaded('pdo')
+            || !in_array('sqlite', PDO::getAvailableDrivers())) {
             throw new Exception('No sqlite extension or no sqlite PDO driver');
         }
         if (!class_exists('Horde_Db_Adapter_Pdo_Sqlite')) {
             throw new Exception('The "Horde_Db_Adapter_Pdo_Sqlite" class is unavailable!');
         }
-        $db = new Horde_Db_Adapter_Pdo_Sqlite(array('dbname' => ':memory:', 'charset' => 'utf-8'));
+        $db = new Horde_Db_Adapter_Pdo_Sqlite(['dbname' => ':memory:', 'charset' => 'utf-8']);
         if (isset($params['migrations'])) {
             if (isset($params['migrations']['migrationsPath'])) {
-                $migrations = array($params['migrations']);
+                $migrations = [$params['migrations']];
             } else {
                 $migrations = $params['migrations'];
             }
             foreach ($migrations as $migration) {
                 $migrator = new Horde_Db_Migration_Migrator(
-                    $db, null, $migration
+                    $db,
+                    null,
+                    $migration
                 );
                 $migrator->up();
             }

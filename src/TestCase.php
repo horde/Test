@@ -23,7 +23,7 @@ use ReflectionNamedType;
 /**
  * Basic Horde test case helper.
  *
- * Copyright 2009-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2009-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -34,13 +34,14 @@ use ReflectionNamedType;
  * @author   Jan Schneider <jan@horde.org>
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
+ * @coversNothing
  */
 class TestCase extends \PHPUnit\Framework\TestCase
 {
     /**
      * Useful shorthand if you are mocking a class with a private constructor
      */
-    public function getMockSkipConstructor($className, array $methods = array(), array $arguments = array(), $mockClassName = '')
+    public function getMockSkipConstructor($className, array $methods = [], array $arguments = [], $mockClassName = '')
     {
         $builder = $this->getMockBuilder($className)->disableOriginalConstructor();
         if ($methods) {
@@ -73,7 +74,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
      * @return mixed  The value of the configuration file's $conf variable, or
      *                null.
      */
-    public static function getConfig($env, $path = null, $default = array())
+    public static function getConfig($env, $path = null, $default = [])
     {
         // Initialize for edge cases;
         $conf = [];
@@ -158,7 +159,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
      * Use this to expect a mock object method to be called multiple times with potentially different arguments and return values
      * The number of expected invocations is based on the count of $argsArrays
      * Phpunits "at" as well as "withConsecutive" are deprecated, so this is a helper to get around that for this usecase
-     * 
+     *
      * @param MockObject $mockObject      The mock object
      * @param string $method              The method to you expect to be called multiple times
      * @param array<array> $argsArrays  The array of expected arguments, the method should be called with
@@ -170,15 +171,15 @@ class TestCase extends \PHPUnit\Framework\TestCase
      */
     public function matchConsecutiveInvocations(
         MockObject $mockObject,
-        string $method, 
+        string $method,
         array $argsArrays,
         array $returnValues = [],
         bool $exact = true
-    ): void {   
+    ): void {
         $assertionMethod = $exact ? 'assertSame' : 'assertEquals';
         $invocations = count($argsArrays);
         $matcher = $this->exactly($invocations);
-        $mockObject->expects($matcher)->method($method)->willReturnCallback(function() use ($argsArrays, $returnValues, $matcher, $assertionMethod) {
+        $mockObject->expects($matcher)->method($method)->willReturnCallback(function () use ($argsArrays, $returnValues, $matcher, $assertionMethod) {
             if (method_exists($matcher, 'numberOfInvocations')) {
                 $invocation = $matcher->numberOfInvocations();
             } else {
@@ -189,11 +190,11 @@ class TestCase extends \PHPUnit\Framework\TestCase
             $expectedArgs = $argsArrays[$idx];
             $expectedArgCount = count($expectedArgs);
             self::assertSame($expectedArgCount, count($args));
-            foreach($expectedArgs as $pos => $expectedArg) {
+            foreach ($expectedArgs as $pos => $expectedArg) {
                 self::$assertionMethod($expectedArg, $args[$pos]);
             }
 
-            if (array_key_exists($idx, $returnValues)){
+            if (array_key_exists($idx, $returnValues)) {
                 return $returnValues[$idx];
             }
         });

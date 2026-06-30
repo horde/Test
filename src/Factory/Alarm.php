@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Generates an alarm setup for the test situation.
  *
@@ -10,13 +11,16 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test\Factory;
+
 use Horde\Test\Exception;
 use Horde_Alarm_Null;
+
 /**
  * Generates an alarm setup for the test situation.
  *
- * Copyright 2011-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.

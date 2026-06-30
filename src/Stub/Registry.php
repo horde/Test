@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2011-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -11,9 +12,12 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test\Stub;
+
 use Horde\Exception\HordeException;
 use Horde\Test\Stub\Registry\Loadconfig;
+
 /**
  * A test replacement for Horde_Registry.
  *
@@ -134,10 +138,10 @@ class Registry
      */
     public function remoteHost(): object
     {
-        return (object)[
+        return (object) [
             'addr' => '1.2.3.4',
             'host' => 'example.com',
-            'proxy' => false
+            'proxy' => false,
         ];
     }
 
@@ -155,10 +159,12 @@ class Registry
      * @param string $app        Application.
      */
     public function setConfigFile(
-        $loadconfig, $conf_file, $vars = null, $app = null
-    )
-    {
-        $sig = serialize(array($conf_file, $vars, $app));
+        $loadconfig,
+        $conf_file,
+        $vars = null,
+        $app = null
+    ) {
+        $sig = serialize([$conf_file, $vars, $app]);
         $this->configObjects[$sig] = $loadconfig;
     }
 
@@ -180,15 +186,15 @@ class Registry
             throw new HordeException('Failed to import configuration file "hooks.php".');
         }
 
-        $sig = serialize(array($conf_file, $vars, $app));
+        $sig = serialize([$conf_file, $vars, $app]);
         if (isset($this->configObjects[$sig])) {
             return $this->configObjects[$sig];
         }
 
         return new Loadconfig(
-                $app,
-                $conf_file,
-                $vars
+            $app,
+            $conf_file,
+            $vars
         );
     }
 

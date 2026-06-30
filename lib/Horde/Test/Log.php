@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Provides utilities to test for log output.
  *
@@ -14,7 +15,7 @@
 /**
  * Provides utilities to test for log output.
  *
- * Copyright 2011-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -77,7 +78,7 @@ class Horde_Test_Log extends Horde_Test_Case
      */
     public function assertLogContains($message)
     {
-        $messages = array();
+        $messages = [];
         $found = false;
         foreach ($this->_logHandler->events as $event) {
             if (strstr($event['message'], $message) !== false) {
@@ -102,7 +103,7 @@ class Horde_Test_Log extends Horde_Test_Case
      */
     public function assertLogRegExp($regular_expression)
     {
-        $messages = array();
+        $messages = [];
         $found = false;
         foreach ($this->_logHandler->events as $event) {
             if (preg_match($regular_expression, $event['message'], $matches) !== false) {

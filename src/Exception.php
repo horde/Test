@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The exception specific to this package.
  *
@@ -10,12 +11,15 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test;
+
 use Horde\Exception\Wrapped;
+
 /**
  * The exception specific to this package.
  *
- * Copyright 2011-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -26,6 +30,4 @@ use Horde\Exception\Wrapped;
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
-class Exception extends Wrapped
-{
-}
+class Exception extends Wrapped {}

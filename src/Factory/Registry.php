@@ -1,8 +1,7 @@
 <?php
+
 /**
  * Generates registry services for testing purposes.
- *
- * PHP Version 7
  *
  * @category Horde
  * @package  Test
@@ -10,12 +9,15 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL
  * @link     http://www.horde.org/components/Horde_Test
  */
+
 namespace Horde\Test\Factory;
+
 use Horde\Test\Stub\Registry as RegistryStub;
+
 /**
  * Generates registry services for testing purposes.
  *
- * Copyright 2011-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
