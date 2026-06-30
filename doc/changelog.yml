@@ -1,77 +1,14 @@
 ---
-3.0.0alpha7:
-  api: 3.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-03-14
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |+
-3.0.0alpha6:
-  api: 3.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-03-14
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |+
-3.0.0alpha5:
-  api: 3.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-03-14
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |+
-3.0.0alpha4:
-  api: 3.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-03-14
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [rla] Added stub of a selftest suit.
-    [rla] Converted to namespaced code.
-3.0.0alpha3:
-  api: 3.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-03-14
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |+
-3.0.0alpha2:
-  api: 3.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-03-13
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [rla] unbundle old phpunit, add composer dep on phpunit 9.
-3.0.0alpha1:
-  api: 3.0.0alpha1
+3.0.0:
+  api: 3.0.0
   state:
     release: stable
     api: stable
-  date: 2021-02-24
+  date: 2026-06-30
   license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |+
+    identifier: LGPL-2.1-only
+    uri: https://spdx.org/licenses/LGPL-2.1-only.html
+  notes: "style: PSR-12 modernization sweep\nchore: update CI\nchore: Update workflow dependency\nchore: It was good while it lasted\nrefactor(injector): Widen type hints from Horde_Injector to Horde_Injector|Injector\nMerge pull request #10 from powercycle/update_phpunit12+\nUpdate to phpunit 12"
 3.0.0-alpha8:
   api: 3.0.0-alpha8
   state:
@@ -81,17 +18,77 @@
   license:
     identifier: LGPL-2.1-only
     uri: https://spdx.org/licenses/LGPL-2.1-only.html
-  notes: |-
-    Merge pull request #7 from maintaina-com/test-case-match-consecutive-invocations
-    Merge pull request #9 from amulet1/fix_tests
-    fix: Add missing property names to test stubs
-    Merge pull request #8 from amulet1/FRAMEWORK_6_0
-    fix: Change autoloader to be compatible with PHP 8.2+
-    added TestCase::matchConsecutiveInvocations helper method
-    Merge pull request #5 from horde/feat/make-pipeline-work-again
-    Merge: Make CI job work again. Fix minor PHPStan Level 2 Finding
-    Merge pull request #3 from maintaina-com/FRAMEWORK_6_0
-    Merge pull request #1 from midahp/FRAMEWORK_6_0
+  notes: "Merge pull request #7 from maintaina-com/test-case-match-consecutive-invocations\nMerge pull request #9 from amulet1/fix_tests\nfix: Add missing property names to test stubs\nMerge pull request #8 from amulet1/FRAMEWORK_6_0\nfix: Change autoloader to be compatible with PHP 8.2+\nadded TestCase::matchConsecutiveInvocations helper method\nMerge pull request #5 from horde/feat/make-pipeline-work-again\nMerge: Make CI job work again. Fix minor PHPStan Level 2 Finding\nMerge pull request #3 from maintaina-com/FRAMEWORK_6_0\nMerge pull request #1 from midahp/FRAMEWORK_6_0"
+3.0.0alpha7:
+  api: 3.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-14
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: ''
+3.0.0alpha6:
+  api: 3.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-14
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: ''
+3.0.0alpha5:
+  api: 3.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-14
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: ''
+3.0.0alpha4:
+  api: 3.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-14
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "[rla] Added stub of a selftest suit.\n[rla] Converted to namespaced code.\n"
+3.0.0alpha3:
+  api: 3.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-14
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: ''
+3.0.0alpha2:
+  api: 3.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-13
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "[rla] unbundle old phpunit, add composer dep on phpunit 9.\n"
+3.0.0alpha1:
+  api: 3.0.0alpha1
+  state:
+    release: stable
+    api: stable
+  date: 2021-02-24
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: ''
 2.6.4:
   api: 2.6.0
   state:
@@ -101,8 +98,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Fix compatibility with PHP 7.4.
+  notes: "[jan] Fix compatibility with PHP 7.4.\n"
 2.6.3:
   api: 2.6.0
   state:
@@ -112,8 +108,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Don't exit after running phpunit tests.
+  notes: "[jan] Don't exit after running phpunit tests.\n"
 2.6.2:
   api: 2.6.0
   state:
@@ -123,9 +118,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Update to PHPUnit 4.8.35 and dependencies.
-    [jan] Colorize PHPUnit output.
+  notes: "[jan] Update to PHPUnit 4.8.35 and dependencies.\n[jan] Colorize PHPUnit output.\n"
 2.6.1:
   api: 2.6.0
   state:
@@ -135,8 +128,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Update to PHPUnit 4.8.26 and dependencies.
+  notes: "[jan] Update to PHPUnit 4.8.26 and dependencies.\n"
 2.6.0:
   api: 2.6.0
   state:
@@ -146,8 +138,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Add Horde_Test_Stub_Registry#setConfigFile() to provide pre-configured Horde_Test_Stub_Registry_Loadconfig objects.
+  notes: "[jan] Add Horde_Test_Stub_Registry#setConfigFile() to provide pre-configured Horde_Test_Stub_Registry_Loadconfig objects.\n"
 2.5.1:
   api: 2.5.0
   state:
@@ -157,8 +148,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Update to PHPUnit 4.5.0 and dependencies.
+  notes: "[mms] Update to PHPUnit 4.5.0 and dependencies.\n"
 2.5.0:
   api: 2.5.0
   state:
@@ -168,8 +158,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mjr] Add method to obtain all logged events.
+  notes: "[mjr] Add method to obtain all logged events.\n"
 2.4.8:
   api: 2.3.0
   state:
@@ -179,8 +168,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Fix install location for the phpunit libraries packaged locally via composer.
+  notes: "[mms] Fix install location for the phpunit libraries packaged locally via composer.\n"
 2.4.7:
   api: 2.3.0
   state:
@@ -190,9 +178,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Update to PHPUnit 4.4.0 and dependencies.
-    [jan] Add remoteHost() to Horde_Test_Stub_Registry.
+  notes: "[mms] Update to PHPUnit 4.4.0 and dependencies.\n[jan] Add remoteHost() to Horde_Test_Stub_Registry.\n"
 2.4.6:
   api: 2.3.0
   state:
@@ -202,8 +188,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Add convertUsername() to Horde_Test_Stub_Registry.
+  notes: "[jan] Add convertUsername() to Horde_Test_Stub_Registry.\n"
 2.4.5:
   api: 2.3.0
   state:
@@ -213,9 +198,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Update to PHPUnit 4.3.4 and dependencies.
-    [jan] Raise priority of Horde_Test autoloader.
+  notes: "[jan] Update to PHPUnit 4.3.4 and dependencies.\n[jan] Raise priority of Horde_Test autoloader.\n"
 2.4.4:
   api: 2.3.0
   state:
@@ -225,8 +208,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Don't report hooks loading as successful.
+  notes: "[jan] Don't report hooks loading as successful.\n"
 2.4.3:
   api: 2.3.0
   state:
@@ -236,9 +218,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Fix determination of test cases using AllTests.php.
-    [mms] Fix AllTests.php when dealing with test cases that inherit from parent test cases.
+  notes: "[mms] Fix determination of test cases using AllTests.php.\n[mms] Fix AllTests.php when dealing with test cases that inherit from parent test cases.\n"
 2.4.2:
   api: 2.3.0
   state:
@@ -248,8 +228,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Update to PHPUnit 4.1.3.
+  notes: "[jan] Update to PHPUnit 4.1.3.\n"
 2.4.1:
   api: 2.3.0
   state:
@@ -259,8 +238,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Fix running tests from PEAR-installed version.
+  notes: "[jan] Fix running tests from PEAR-installed version.\n"
 2.4.0:
   api: 2.3.0
   state:
@@ -270,8 +248,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Bundle PHPUnit and dependencies.
+  notes: "[jan] Bundle PHPUnit and dependencies.\n"
 2.3.1:
   api: 2.3.0
   state:
@@ -281,8 +258,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Fix loading PHPUnit from PHAR file.
+  notes: "[mms] Fix loading PHPUnit from PHAR file.\n"
 2.3.0:
   api: 2.3.0
   state:
@@ -292,9 +268,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Add stubs for Horde_Registry_Loadconfig and Horde_Registry::loadConfigFile().
-    [mms] Add factory for a HashTable instance.
+  notes: "[jan] Add stubs for Horde_Registry_Loadconfig and Horde_Registry::loadConfigFile().\n[mms] Add factory for a HashTable instance.\n"
 2.2.6:
   api: 2.0.0
   state:
@@ -304,8 +278,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Correctly set up include paths on installed packages.
+  notes: "[jan] Correctly set up include paths on installed packages.\n"
 2.2.5:
   api: 2.0.0
   state:
@@ -315,8 +288,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Restore error reporting level after running tests via Horde_Test_AllTests#run().
+  notes: "[mms] Restore error reporting level after running tests via Horde_Test_AllTests#run().\n"
 2.2.4:
   api: 2.0.0
   state:
@@ -326,8 +298,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Fix autoloading from a PHP-defined namespace.
+  notes: "[mms] Fix autoloading from a PHP-defined namespace.\n"
 2.2.3:
   api: 2.0.0
   state:
@@ -337,8 +308,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Define missing Horde_Test_Stub_Registry property.
+  notes: "[jan] Define missing Horde_Test_Stub_Registry property.\n"
 2.2.2:
   api: 2.0.0
   state:
@@ -348,8 +318,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Add test factory for MongoDB.
+  notes: "[mms] Add test factory for MongoDB.\n"
 2.2.1:
   api: 2.0.0
   state:
@@ -359,8 +328,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Return to old directory after running all tests.
+  notes: "[jan] Return to old directory after running all tests.\n"
 2.2.0:
   api: 2.0.0
   state:
@@ -370,8 +338,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Add test/ directory to include_path to allow autoloading of test classes.
+  notes: "[jan] Add test/ directory to include_path to allow autoloading of test classes.\n"
 2.1.0:
   api: 2.0.0
   state:
@@ -381,31 +348,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Refactor Horde_Test_AllTests.
-    [mms] Add Horde_Test_Bootstrap.
-2.0.0beta1:
-  api: 1.3.0
-  state:
-    release: beta
-    api: stable
-  date: 2012-07-19
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First beta release for Horde 5.
-2.0.0alpha1:
-  api: 1.3.0
-  state:
-    release: alpha
-    api: stable
-  date: 2012-07-06
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First alpha release for Horde 5.
+  notes: "[mms] Refactor Horde_Test_AllTests.\n[mms] Add Horde_Test_Bootstrap.\n"
 2.0.0:
   api: 1.3.0
   state:
@@ -415,8 +358,27 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First stable release for Horde 5.
+  notes: "First stable release for Horde 5.\n"
+2.0.0beta1:
+  api: 1.3.0
+  state:
+    release: beta
+    api: stable
+  date: 2012-07-19
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "First beta release for Horde 5.\n"
+2.0.0alpha1:
+  api: 1.3.0
+  state:
+    release: alpha
+    api: stable
+  date: 2012-07-06
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "First alpha release for Horde 5.\n"
 1.3.0:
   api: 1.3.0
   state:
@@ -426,9 +388,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [gwr] Added Alarm, Cache, and Session stub factories
-    [gwr] Fix autoloading to work with PHPUnit-3.6.
+  notes: "[gwr] Added Alarm, Cache, and Session stub factories\n[gwr] Fix autoloading to work with PHPUnit-3.6.\n"
 1.2.1:
   api: 1.2.0
   state:
@@ -438,8 +398,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Require PHPUnit 3.5 due to BC breaking changes in 3.6.
+  notes: "[jan] Require PHPUnit 3.5 due to BC breaking changes in 3.6.\n"
 1.2.0:
   api: 1.2.0
   state:
@@ -449,9 +408,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [gwr] Added Horde_Test_Stub_Factory as a simple factory stub.
-    [gwr] Add Horde_Test_Setup for complex test suite setups.
+  notes: "[gwr] Added Horde_Test_Stub_Factory as a simple factory stub.\n[gwr] Add Horde_Test_Setup for complex test suite setups.\n"
 1.1.2:
   api: 1.1.0
   state:
@@ -461,9 +418,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [gwr] Improve detection of the lib directory.
-    [gwr] Extract the setup pieces we do in the AllTests helper and heed the Autoload.php file of a test suite.
+  notes: "[gwr] Improve detection of the lib directory.\n[gwr] Extract the setup pieces we do in the AllTests helper and heed the Autoload.php file of a test suite.\n"
 1.1.1:
   api: 1.1.0
   state:
@@ -473,8 +428,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Fix Horde_Text_Exception extending the wrong class name.
+  notes: "[jan] Fix Horde_Text_Exception extending the wrong class name.\n"
 1.1.0:
   api: 1.1.0
   state:
@@ -484,53 +438,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [gwr] Added test case for log output.
-    [gwr] Added stub for application testing.
-1.0.0beta1:
-  api: 1.0.0
-  state:
-    release: beta
-    api: beta
-  date: 2011-03-16
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First beta release for Horde 4.
-1.0.0alpha1:
-  api: 1.0.0
-  state:
-    release: alpha
-    api: alpha
-  date: 2011-03-08
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First alpha release for Horde 4.
-1.0.0RC2:
-  api: 1.0.0
-  state:
-    release: beta
-    api: beta
-  date: 2011-03-29
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    Second release candidate for Horde 4.
-1.0.0RC1:
-  api: 1.0.0
-  state:
-    release: beta
-    api: beta
-  date: 2011-03-23
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First release candidate for Horde 4.
+  notes: "[gwr] Added test case for log output.\n[gwr] Added stub for application testing.\n"
 1.0.0:
   api: 1.0.0
   state:
@@ -540,5 +448,44 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First stable release for Horde 4.
+  notes: "First stable release for Horde 4.\n"
+1.0.0RC2:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2011-03-29
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "Second release candidate for Horde 4.\n"
+1.0.0RC1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2011-03-23
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "First release candidate for Horde 4.\n"
+1.0.0beta1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2011-03-16
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "First beta release for Horde 4.\n"
+1.0.0alpha1:
+  api: 1.0.0
+  state:
+    release: alpha
+    api: alpha
+  date: 2011-03-08
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "First alpha release for Horde 4.\n"
